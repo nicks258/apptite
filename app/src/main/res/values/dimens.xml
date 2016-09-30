@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="toolbarHeight">56dp</dimen>
+    <dimen name="menusWidth">168dp</dimen>
+
+    <dimen name="defaultDividerHeight">4dp</dimen>
+    <dimen name="defaultProgressBarHeight">1dp</dimen>
+    <dimen name="defaultTitleSize">14dp</dimen>
+    <dimen name="defaultUrlSize">10dp</dimen>
+    <dimen name="defaultMenuDropShadowCornerRadius">2dp</dimen>
+    <dimen name="defaultMenuDropShadowSize">4dp</dimen>
+    <dimen name="defaultMenuTextSize">16dp</dimen>
+    <dimen name="defaultMenuTextPaddingLeft">16dp</dimen>
+    <dimen name="defaultMenuTextPaddingRight">32dp</dimen>
+    <dimen name="defaultMenuLayoutMargin">4dp</dimen>
+    <dimen name="defaultMenuCornerRadius">2dp</dimen>
+    <dimen name="activity_vertical_margin">6dp</dimen>
+    <dimen name="fab_margin">8dp</dimen>
+
+    <dimen name="text_headline_large">30.0sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_large_title">22sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_large_body">18sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_small_body">14sp</dimen>
+    <dimen name="text_extra_small_body">12.0sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">4dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+
+
+</resources>
