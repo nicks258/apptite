@@ -40,18 +40,14 @@
         <item name="colorPrimaryDark">@color/hn_orange_dark</item>
         <item name="colorAccent">@color/hn_orange_lighter</item>
     </style>
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_dark</item>
+    </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/hn_orange</item>
-        <item name="colorPrimaryDark">@color/hn_orange_dark</item>
-        <item name="colorAccent">@color/hn_orange_lighter</item>
-        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
-        <item name="android:itemTextAppearance">@style/OptionsMenuTextColor</item>
-        <item name="android:textColorPrimary">@color/black_87pc</item>
-        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
-    </style>
+
 
     <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowNoTitle">true</item>

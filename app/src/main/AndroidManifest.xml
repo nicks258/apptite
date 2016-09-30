@@ -29,6 +29,9 @@
             android:name=".ui.activity.MainNavigationActivity"
             android:label="@string/title_activity_main_navigation"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".main_navigation.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
