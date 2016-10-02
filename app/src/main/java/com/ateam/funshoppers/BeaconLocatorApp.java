@@ -29,6 +29,8 @@ import android.util.Log;
 
 import com.ateam.funshoppers.data.DataManager;
 import com.ateam.funshoppers.injection.component.ApplicationComponent;
+
+
 import com.ateam.funshoppers.injection.component.DaggerApplicationComponent;
 import com.ateam.funshoppers.injection.module.ApplicationModule;
 import com.ateam.funshoppers.model.ActionBeacon;

@@ -243,7 +243,7 @@ public class MainNavigationActivity extends BaseActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_main, menu);
+        menuInflater.inflate(R.menu.menu_ma, menu);
         return true;
     }
 
@@ -279,7 +279,7 @@ public class MainNavigationActivity extends BaseActivity
                 Toast.makeText(MainNavigationActivity.this, "Delete is Selected", Toast.LENGTH_SHORT).show();
                 return true;
 
-            case R.id.menu_preferences:
+            case R.id.logout:
                 Toast.makeText(MainNavigationActivity.this, "Preferences is Selected", Toast.LENGTH_SHORT).show();
                 return true;
 

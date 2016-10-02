@@ -1,4 +1,20 @@
 <resources>
+    <style name="AppIntro" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ColoredButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+
     <style name="FinestWebViewTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/finestWhite</item>
         <item name="colorPrimaryDark">@color/hn_orange</item>
@@ -43,14 +59,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/hn_orange</item>
-        <item name="colorPrimaryDark">@color/hn_orange_dark</item>
-        <item name="colorAccent">@color/hn_orange_lighter</item>
-        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
-        <item name="android:itemTextAppearance">@style/OptionsMenuTextColor</item>
-        <item name="android:textColorPrimary">@color/black_87pc</item>
-        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <!-- Customize your theme here. -->
     </style>
 
     <style name="AppTheme.NoActionBar" parent="AppTheme">
