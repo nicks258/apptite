@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
+<<<<<<< HEAD
     <item
         is-multidex="false"
         jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
@@ -300,3 +301,5 @@
     </item>
 
 </items>
+=======
+>>>>>>> e94cbd24955711349373a89c0a95b70121817eb5
