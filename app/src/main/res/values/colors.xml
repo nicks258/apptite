@@ -5,7 +5,27 @@
     <color name="finestWhite30">#4DFFFFFF</color>
 
     <color name="orange">#FA0</color>
+    <color name="solid_one">#4abc96</color>
+    <color name="solid_two">#357180</color>
+    <color name="solid_three">#ffce00</color>
 
+    <color name="first_slide_background">#E91E63</color>
+    <color name="first_slide_buttons">#880E4F</color>
+
+    <color name="second_slide_background">#9C27B0</color>
+    <color name="second_slide_buttons">#4A148C</color>
+
+    <color name="third_slide_background">#009688</color>
+    <color name="third_slide_buttons">#004D40</color>
+
+    <color name="fourth_slide_background">#795548</color>
+    <color name="fourth_slide_buttons">#3E2723</color>
+
+    <color name="custom_slide_background">#3F51B5</color>
+    <color name="custom_slide_buttons">#1A237E</color>
+
+    <!--Splash Screen-->
+    <item name="splash_background" type="color">@color/colorPrimary</item>
     <color name="finestGray10">#1AD2D2D2</color>
     <color name="finestGray20">#33D2D2D2</color>
     <color name="ColorPrimary">#FF5722</color>
@@ -15,7 +35,8 @@
     <color name="finestBlack20">#33202020</color>
     <color name="finestBlack30">#4D202020</color>
     <color name="finestBlack40">#66202020</color>
-
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
     <color name="finestWhite">#FFFFFF</color>
     <color name="finestBlack">#000000</color>
     <color name="finestSilver">#A5A5A5</color>

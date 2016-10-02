@@ -1,30 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-            <item android:title="Compose" android:id="@+id/navigation_item_2" android:icon="@drawable/composea" ></item>
-            <item android:title="Inbox"  android:icon="@drawable/inbox" ></item>
-            <item android:title="Sent" android:icon="@drawable/senta"></item>
-            <item android:title="Drafts" android:icon="@drawable/draft"></item>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/inbox"
+            android:checked="false"
+            android:icon="@drawable/ic_inbox_black"
+            android:title="@string/inbox_string" />
+
+        <item
+            android:id="@+id/starred"
+            android:checked="false"
+            android:icon="@drawable/ic_star_black"
+            android:title="@string/starred_string" />
+
+        <item
+            android:id="@+id/sent_mail"
+            android:checked="false"
+            android:icon="@drawable/ic_send_black"
+            android:title="@string/sent_mail_string" />
+
+        <item
+            android:id="@+id/drafts"
+            android:checked="false"
+            android:icon="@drawable/ic_drafts_black"
+            android:title="@string/draft_string" />
 
 
+        <item
+            android:id="@+id/allmail"
+            android:checked="false"
+            android:icon="@drawable/ic_email_black"
+            android:title="@string/all_mail_string" />
+        <item
+            android:id="@+id/trash"
+            android:checked="false"
+            android:icon="@drawable/ic_delete_black"
+            android:title="@string/trash_string" />
+        <item
+            android:id="@+id/spam"
+            android:checked="false"
+            android:icon="@drawable/ic_error_black"
+            android:title="@string/spam_string" />
 
-
-    <item android:title="Others">
-        <menu>
-            <item
-                android:title="Spam" android:icon="@drawable/spam"/>
-            <item
-                android:title="Bin" android:icon="@drawable/bin"/>
-        </menu>
-    </item>
-
-    <group android:id="@+id/shitss">
-
-            <item android:title="Settings" android:icon="@drawable/settings"></item>
-            <item android:title="Help" android:icon="@drawable/help"></item>
     </group>
-
-
-
-
-
 </menu>

@@ -5,7 +5,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/hn_orange"
+    android:background="@color/bluePrimary"
     app:theme="@style/AppTheme.ActionBar">
 
 </android.support.v7.widget.Toolbar>
