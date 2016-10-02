@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items version="2" >
 
+<<<<<<< HEAD
     <item
         is-multidex="false"
         jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
@@ -19,6 +20,9 @@
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_ee77d1bc48cc56e1e7e9bfe1a4a03915b05fbf0f.jar" />
     </item>
+=======
+<<<<<<< HEAD
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     <item
         is-multidex="false"
         jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
@@ -66,6 +70,7 @@
     </item>
     <item
         is-multidex="false"
+<<<<<<< HEAD
         jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="false"
         optimize="true"
@@ -309,3 +314,259 @@
     </item>
 
 </items>
+=======
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_1a3a7883130126266e7d9f03bc5d9df2cb27bb37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.google.dagger\dagger\2.2\febfd2d9e89bde4c3a9723bcd9522cba96bddac7\dagger-2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="febfd2d9e89bde4c3a9723bcd9522cba96bddac7">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\dagger-2.2_f722be6f98e31bb90f13364c11b5f9042bd5542a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\library-2.4.0_b78ea25e4e2821eb6753994300f246c78a288ed3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_407e43d6acff0d8c3924333d654fb3165852ef62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.thefinestartist\annotations\0.9.0\b69d23b00ca5fd30feea91ab4b24a192d6b928ef\annotations-0.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b69d23b00ca5fd30feea91ab4b24a192d6b928ef">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\annotations-0.9.0_b0a7d65ab140f735d355723f94386b9b05206237.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_c5a570f8a22ef9be612b46b88cfc804601785eb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_145d4897f3840744069b85ac236c24c10ef0ccdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e3c7e8ff9f476d0d93ee7b046fbe8037a2b822c0">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-v13-24.2.1_88a5e7b3eeac2cf9bae6a1c096e5c971123f42af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_1952fdb0bee2ade52c7b88ce7350307cf2f0c5ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_efcd413ebcde59ee87ec64d8ce903bbdd9ccc140.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c07fb99b729345908dda75fadbbf882e300631ff">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_00a16db2fbbaaeeb50c7aad14d37dc4518678adf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_561af5cc9c53b17dba5796fe8a458e1b457c068e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_ee77d1bc48cc56e1e7e9bfe1a4a03915b05fbf0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_a3a790a566099d825502f5ccce43a2442f297c39.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-1.3.0_603102e97257ac53215be9404e0238c1f406f95e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_8e73ced63e6c5c483e2cbe17d97feb845cfc8bdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\preference-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="eb5d8b5c47b4e5c0184a7986a26bc12cfc51cde3">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-preference-v7-24.2.1_9ef886af6c7e6cacc1b3fe66b3ba2357c19c67dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_de6ccdb863a735935c59ce09f6a1b1a4b4d4c040.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_1bf81bd19f7658b7367305abcb8570e459b1a5d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1847846c27c4510127ced2230a18e6ddf56d349b">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9_3eee5e4ef3b9b27e1d041950562ebc9f8a82f82a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_4bc48355b5d1fe729ad603619f3a68c361e07937.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_c01b8a8f192321c8d79fcb6dfea43f8ce9e131b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.codemybrainsout.onboarding\onboarder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="57fc6ceed2aec32f9d5b845cbf2e4d6ec44a6f7e">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.codemybrainsout.onboarding-onboarder-1.0.0_52b6db0f0b2ee9bd5d3be4b9245ec7c492e743de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4636dbce2dffbb0c1598e61e19be4fd8966ddc3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\javax.inject-1_72aa26ed6057da9af3c9ed04533519d6f0770e4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.databinding\library\1.0-rc3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="acaeec786da68e5cfc30134c36cb5645a8a0c6ba">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.databinding-library-1.0-rc3_28e8e96c2fd02432055686929d0c13abd1d22068.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.android.databinding\baseLibrary\1.0-rc3\dda966552be274fa341c817e2b1588faf8e1b2\baseLibrary-1.0-rc3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="00dda966552be274fa341c817e2b1588faf8e1b2">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\baseLibrary-1.0-rc3_97cfe01048ebc439dd3cc9e2412caad46bf7512b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_9c1a3832c3deb9e993e63bc32d9cc00447039a69.jar" />
+    </item>
+
+</items>
+=======
+>>>>>>> e94cbd24955711349373a89c0a95b70121817eb5
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc

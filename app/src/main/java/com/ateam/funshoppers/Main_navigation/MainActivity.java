@@ -1,9 +1,14 @@
 package com.ateam.funshoppers.Main_navigation;
 
+<<<<<<< HEAD
 import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+=======
+import android.content.Intent;
+import android.os.Bundle;
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,6 +22,7 @@ import android.widget.Toast;
 
 import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
+<<<<<<< HEAD
 import com.rey.material.widget.ProgressView;
 
 import java.util.List;
@@ -35,12 +41,25 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
     Boolean doubleBackToExitPressedOnce = false;
+=======
+
+public class MainActivity extends AppCompatActivity {
+    LocalDatabase localDatabase;
+    //Defining Variables
+    private Toolbar toolbar;
+    private NavigationView navigationView;
+    private DrawerLayout drawerLayout;
+
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_main);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
         // Initializing Toolbar and setting it as the actionbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,9 +75,12 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem) {
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
                 //Checking if the item is in checked state or not, if not make it in checked state
                 if(menuItem.isChecked()) menuItem.setChecked(false);
                 else menuItem.setChecked(true);
@@ -206,6 +228,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -224,4 +247,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 2000);
     }
+=======
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
 }

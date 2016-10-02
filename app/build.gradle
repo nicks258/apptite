@@ -4,7 +4,11 @@ apply plugin: 'com.neenbedankt.android-apt'
 android {
     compileSdkVersion 24
     buildToolsVersion "23.0.3"
+<<<<<<< HEAD
     useLibrary 'org.apache.http.legacy'
+=======
+    useLibrary  'org.apache.http.legacy'
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     defaultConfig {
         applicationId "com.ateam.funshoppers"
         minSdkVersion 18
@@ -50,10 +54,23 @@ dependencies {
     compile 'com.thefinestartist:utils:0.9.0'
     compile 'org.altbeacon:android-beacon-library:2.9'
     compile 'com.jakewharton:butterknife:7.0.1'
+<<<<<<< HEAD
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     compile 'de.hdodenhof:circleimageview:1.3.0'
     compile 'com.codemybrainsout.onboarding:onboarder:1.0.0'
 
+=======
+    compile 'com.android.support:support-v4:24.+'
+    compile 'com.android.support:appcompat-v7:24.+'
+    compile 'com.android.support:design:24.+'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.codemybrainsout.onboarding:onboarder:1.0.0'
+
+
+
+
+
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
 }

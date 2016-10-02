@@ -1,9 +1,12 @@
 <resources>
+<<<<<<< HEAD
     <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorAccent">#5fa3d0</item>
         <item name="android:textColorPrimary">#000000</item>
         <item name="android:background">#FFFFFF</item>
     </style>
+=======
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     <style name="AppIntro" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -57,9 +60,32 @@
     </declare-styleable>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+<<<<<<< HEAD
         <item name="colorPrimary">@color/bluePrimary</item>
         <item name="colorPrimaryDark">@color/bluePrimary</item>
         <item name="colorAccent">@color/bluePrimary</item>
+=======
+        <item name="colorPrimary">@color/hn_orange</item>
+        <item name="colorPrimaryDark">@color/hn_orange_dark</item>
+        <item name="colorAccent">@color/hn_orange_lighter</item>
+    </style>
+<<<<<<< HEAD
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <!-- Customize your theme here. -->
+=======
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_dark</item>
+>>>>>>> e94cbd24955711349373a89c0a95b70121817eb5
+>>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
