@@ -196,9 +196,13 @@ private ProgressDialog progressDialog;
             {
                 view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 
-            }else
+            }else if(url != null && url.startsWith("mailto://"))
             {
-
+                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            }
+            else if(url != null && url.startsWith("geo://"))
+            {
+                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
             }
 
             progressDialog.show();

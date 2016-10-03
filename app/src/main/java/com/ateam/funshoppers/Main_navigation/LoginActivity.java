@@ -4,12 +4,12 @@ package com.ateam.funshoppers.Main_navigation;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.ateam.funshoppers.R;
 
@@ -26,7 +27,7 @@ import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
 
 
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends ActionBarActivity implements ConnectivityReceiver.ConnectivityReceiverListener{
 
     EditText etusername , etpassword;
 
@@ -41,7 +42,7 @@ public class LoginActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_name);
-
+        checkConnection();
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
         etusername = (EditText) findViewById(R.id.input_phone);
 
@@ -70,6 +71,7 @@ public class LoginActivity extends ActionBarActivity {
 
     private void submitForm()
     {
+        checkConnection();
         if (!validateName()) {
             return;
         }
@@ -87,6 +89,50 @@ public class LoginActivity extends ActionBarActivity {
         authenticate(contact);
 
     }
+
+    private void checkConnection() {
+        boolean isConnected = ConnectivityReceiver.isConnected();
+        showSnack(isConnected);
+    }
+
+    // Showing the status in Snackbar
+    private void showSnack(boolean isConnected) {
+        String message;
+        int color;
+        if (isConnected) {
+            message = "Good! Connected to Internet";
+            color = Color.WHITE;
+        } else {
+            message = "Sorry! Not connected to internet";
+            color = Color.RED;
+        }
+
+        Snackbar snackbar = Snackbar
+                .make(findViewById(R.id.coordinatorLayout), message, Snackbar.LENGTH_LONG);
+
+        View sbView = snackbar.getView();
+        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        textView.setTextColor(color);
+        snackbar.show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // register connection status listener
+        MyApplication.getInstance().setConnectivityListener(this);
+    }
+
+    /**
+     * Callback will be triggered when there is change in
+     * network connection
+     */
+    @Override
+    public void onNetworkConnectionChanged(boolean isConnected) {
+        showSnack(isConnected);
+    }
+
     private boolean validateName() {
         if (etusername.length()!=10) {
             inputLayoutName.setError(getString(R.string.err_msg_phone));
