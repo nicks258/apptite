@@ -2,10 +2,12 @@ package com.ateam.funshoppers.Main_navigation;
 
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -188,7 +190,14 @@ public class Homes extends Fragment {
     class MyWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            if(url != null && url.startsWith("whatsapp://"))
+            {
+                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 
+            }else
+            {
+
+            }
             progressDialog.show();
             return super.shouldOverrideUrlLoading(view, url);
         }
