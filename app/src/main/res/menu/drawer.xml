@@ -6,42 +6,42 @@
         <item
             android:id="@+id/home"
             android:checked="false"
-            android:icon="@drawable/ic_inbox_black"
+            android:icon="@drawable/homeicon"
             android:title="Home Page" />
 
         <item
             android:id="@+id/electronics"
             android:checked="false"
-            android:icon="@drawable/ic_star_black"
+            android:icon="@drawable/elec"
             android:title="Electronics" />
 
         <item
             android:id="@+id/lifestyle"
             android:checked="false"
-            android:icon="@drawable/ic_send_black"
+            android:icon="@drawable/life"
             android:title="Lifestyle" />
 
         <item
             android:id="@+id/homes"
             android:checked="false"
-            android:icon="@drawable/ic_drafts_black"
+            android:icon="@drawable/furniture"
             android:title="Homes and Furniture" />
 
 
         <item
             android:id="@+id/books"
             android:checked="false"
-            android:icon="@drawable/ic_email_black"
-            android:title="Books and More" />
+            android:icon="@drawable/brands"
+            android:title="Brands" />
         <item
             android:id="@+id/automotive"
             android:checked="false"
-            android:icon="@drawable/ic_delete_black"
+            android:icon="@drawable/auto"
             android:title="Automotive" />
         <item
             android:id="@+id/offer"
             android:checked="false"
-            android:icon="@drawable/ic_error_black"
+            android:icon="@drawable/gift"
             android:title="Offer Zone" />
 
     </group>
@@ -51,12 +51,12 @@
         <item
             android:id="@+id/mycart"
             android:checked="false"
-            android:icon="@drawable/ic_settings_black_24dp"
+            android:icon="@drawable/mycart"
             android:title="My Cart" />
         <item
             android:id="@+id/myaccountt"
             android:checked="false"
-            android:icon="@drawable/ic_settings_black_24dp"
+            android:icon="@drawable/myacc"
             android:title="My Account" />
     </group>
 </menu>

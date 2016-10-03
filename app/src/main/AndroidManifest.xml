@@ -30,11 +30,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".AppIntro.GradientBackgroundExampleActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             </activity>
 
 
@@ -44,10 +40,19 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-      <activity android:name=".Main_navigation.MainActivity"></activity>
+      <activity android:name=".Main_navigation.MainActivity"/>
 
-        <activity android:name=".AppIntro.ImageBackgroundExampleActivity" />
-        <activity android:name=".AppIntro.SolidBackgroundExampleActivity" />
+        <activity android:name=".AppIntro.ImageBackgroundExampleActivity">
+
+      </activity>
+        <activity android:name=".AppIntro.SolidBackgroundExampleActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+
 
         <activity android:name=".Main_navigation.LoginActivity" />
 

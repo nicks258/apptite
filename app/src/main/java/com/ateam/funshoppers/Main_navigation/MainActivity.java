@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         localDatabase = new LocalDatabase(this);
         //Initializing NavigationView
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        navigationView.setItemIconTintList(null);
 
         //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -67,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.commit();
                         return true;
 
-                    // For rest of the options we just show a toast on click
 
                     case R.id.electronics:
                         Electronics electronics = new Electronics();
@@ -101,8 +101,12 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"My Cart", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.myaccountt:
-                        Toast.makeText(getApplicationContext(),"My Account", Toast.LENGTH_SHORT).show();
+                        MyAccount myAccount = new MyAccount();
+                        android.support.v4.app.FragmentTransaction myaccoutTransaction = getSupportFragmentManager().beginTransaction();
+                        myaccoutTransaction.replace(R.id.frame,myAccount);
+                        myaccoutTransaction.commit();
                         return true;
+
                     default:
                         Toast.makeText(getApplicationContext(),"Somethings Went Wrong", Toast.LENGTH_SHORT).show();
                         return true;
@@ -119,13 +123,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onDrawerClosed(View drawerView) {
-                // Code here will be triggered once the drawer closes as we dont want anything to happen so we leave this blank
+                // Code here will be triggered once the drawer closes
                 super.onDrawerClosed(drawerView);
             }
 
             @Override
             public void onDrawerOpened(View drawerView) {
-                // Code here will be triggered once the drawer open as we dont want anything to happen so we leave this blank
+                // Code here will be triggered once the drawer open
 
                 super.onDrawerOpened(drawerView);
             }

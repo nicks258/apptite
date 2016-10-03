@@ -2,10 +2,12 @@ package com.ateam.funshoppers.Main_navigation;
 
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -74,7 +76,6 @@ private ProgressDialog progressDialog;
             double latitude = gps.getLatitude();
             double longitude = gps.getLongitude();
             // \n is for new line
-            Toast.makeText(getActivity(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
 
             Contact contact = localDatabase.getLoggedInUser();
              url = urll + latitude+"&long="+longitude+"&phonenumber="+contact.username;
@@ -191,6 +192,14 @@ private ProgressDialog progressDialog;
     class MyWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            if(url != null && url.startsWith("whatsapp://"))
+            {
+                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+
+            }else
+            {
+
+            }
 
             progressDialog.show();
             return super.shouldOverrideUrlLoading(view, url);
@@ -207,6 +216,11 @@ private ProgressDialog progressDialog;
            // progressDialog.show();
             super.onLoadResource(view, url);
         }
+
+
+
+
+
 
         @Override
         public void onPageFinished(WebView view, String url) {
@@ -311,6 +325,7 @@ private ProgressDialog progressDialog;
                 super.handleMessage(msg);
             }
         };
+
     }
 
 

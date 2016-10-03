@@ -72,7 +72,6 @@ public class Homes extends Fragment {
             double latitude = gps.getLatitude();
             double longitude = gps.getLongitude();
             // \n is for new line
-            Toast.makeText(getActivity(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
 
             Contact contact = localDatabase.getLoggedInUser();
             url = urll + latitude+"&long="+longitude+"&phonenumber="+contact.username;
