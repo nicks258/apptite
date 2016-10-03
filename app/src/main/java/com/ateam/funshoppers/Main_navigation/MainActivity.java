@@ -69,26 +69,42 @@ public class MainActivity extends AppCompatActivity {
 
                     // For rest of the options we just show a toast on click
 
-                    case R.id.starred:
-                        Toast.makeText(getApplicationContext(),"Stared Selected", Toast.LENGTH_SHORT).show();
+                    case R.id.electronics:
+                        Electronics electronics = new Electronics();
+                        android.support.v4.app.FragmentTransaction electronicsTransaction = getSupportFragmentManager().beginTransaction();
+                        electronicsTransaction.replace(R.id.frame,electronics);
+                        electronicsTransaction.commit();                        return true;
+                    case R.id.lifestyle:
+                        Lifestyle lifestyle = new Lifestyle();
+                        android.support.v4.app.FragmentTransaction lifestyleTransaction = getSupportFragmentManager().beginTransaction();
+                        lifestyleTransaction.replace(R.id.frame,lifestyle);
+                        lifestyleTransaction.commit();                        return true;
+                    case R.id.homes:
+                        Homes homes = new Homes();
+                        android.support.v4.app.FragmentTransaction homesTransaction = getSupportFragmentManager().beginTransaction();
+                        homesTransaction.replace(R.id.frame,homes);
+                        homesTransaction.commit();                        return true;
+                    case R.id.books:
+                        Brands brands = new Brands();
+                        android.support.v4.app.FragmentTransaction brandsTransaction = getSupportFragmentManager().beginTransaction();
+                        brandsTransaction.replace(R.id.frame,brands);
+                        brandsTransaction.commit();                        return true;
+                    case R.id.automotive:
+                        Toast.makeText(getApplicationContext(),"Automotive", Toast.LENGTH_SHORT).show();
                         return true;
-                    case R.id.sent_mail:
-                        Toast.makeText(getApplicationContext(),"Send Selected", Toast.LENGTH_SHORT).show();
+                    case R.id.offer:
+                        Offerzone offerzone = new Offerzone();
+                        android.support.v4.app.FragmentTransaction offerTransaction = getSupportFragmentManager().beginTransaction();
+                        offerTransaction.replace(R.id.frame,offerzone);
+                        offerTransaction.commit();                        return true;
+                    case R.id.mycart:
+                        Toast.makeText(getApplicationContext(),"My Cart", Toast.LENGTH_SHORT).show();
                         return true;
-                    case R.id.drafts:
-                        Toast.makeText(getApplicationContext(),"Drafts Selected", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.allmail:
-                        Toast.makeText(getApplicationContext(),"All Mail Selected", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.trash:
-                        Toast.makeText(getApplicationContext(),"Trash Selected", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.spam:
-                        Toast.makeText(getApplicationContext(),"Spam Selected", Toast.LENGTH_SHORT).show();
+                    case R.id.myaccountt:
+                        Toast.makeText(getApplicationContext(),"My Account", Toast.LENGTH_SHORT).show();
                         return true;
                     default:
-                        Toast.makeText(getApplicationContext(),"Somethings Wrong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Somethings Went Wrong", Toast.LENGTH_SHORT).show();
                         return true;
 
                 }
