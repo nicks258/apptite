@@ -1,6 +1,7 @@
 package com.ateam.funshoppers.Main_navigation;
 
 import android.net.Uri;
+import android.preference.PreferenceActivity;
 import android.support.v7.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,9 +10,12 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ateam.funshoppers.R;
@@ -22,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     LocalDatabase localDatabase;
     //Defining Variables
     private Toolbar toolbar;
+    View view;
+    String da;
+    LayoutInflater mInflater;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
 
@@ -30,12 +37,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_main);
 
+        TextView textView = (TextView) findViewById(R.id.user_name);
 
         // Initializing Toolbar and setting it as the actionbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         localDatabase = new LocalDatabase(this);
         //Initializing NavigationView
+
+        Contact contact = localDatabase.getLoggedInUser();
+        da = contact.email;
+        textView.setText("Hi"+" "+contact.name );
+
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setItemIconTintList(null);
 
@@ -218,7 +231,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void displayContactDetails()
     {
-        Contact contact = localDatabase.getLoggedInUser();
+
+
         Home_page fragment = new Home_page();
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame,fragment);

@@ -100,7 +100,7 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
         String message;
         int color;
         if (isConnected) {
-            message = "Good! Connected to Internet";
+            message = "Welcome To Funshoppers";
             color = Color.WHITE;
         } else {
             message = "Sorry! Not connected to internet";

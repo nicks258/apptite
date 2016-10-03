@@ -192,13 +192,17 @@ public class Electronics extends Fragment {
             {
                 view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 
-            }else if(url != null && url.startsWith("mailto://"))
-            {
-                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            }else if(url.startsWith("mailto:")){
+                Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse(url));
+                startActivity(i);
             }
-            else if(url != null && url.startsWith("geo://"))
-            {
-                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            else if(url.contains("geo:")) {
+                Uri gmmIntentUri = Uri.parse(url);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                if (mapIntent.resolveActivity(getContext().getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
             }
             progressDialog.show();
             return super.shouldOverrideUrlLoading(view, url);
@@ -229,6 +233,13 @@ public class Electronics extends Fragment {
 
         @Override
         public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+            String lallingUrl = failingUrl;
+            Log.d("dog",failingUrl);
+            if(lallingUrl.substring(0,9).compareTo("whatsapp")==0)
+            {
+                mbErrorOccured = false;
+
+            }
             Snackbar snackbar = Snackbar
                     .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
                     .setAction("RETRY", new View.OnClickListener() {
@@ -276,6 +287,7 @@ public class Electronics extends Fragment {
     }
 
     private void showErrorLayout() {
+        Log.d("Error","InternetSumit");
         Snackbar snackbar = Snackbar
                 .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
                 .setAction("RETRY", new View.OnClickListener() {

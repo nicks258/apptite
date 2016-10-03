@@ -193,13 +193,17 @@ public class Offerzone extends Fragment {
             {
                 view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 
-            }else if(url != null && url.startsWith("mailto://"))
-            {
-                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            }else if(url.startsWith("mailto:")){
+                Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse(url));
+                startActivity(i);
             }
-            else if(url != null && url.startsWith("geo://"))
-            {
-                view.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            else if(url.contains("geo:")) {
+                Uri gmmIntentUri = Uri.parse(url);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                if (mapIntent.resolveActivity(getContext().getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
             }
             progressDialog.show();
             return super.shouldOverrideUrlLoading(view, url);
