@@ -22,6 +22,7 @@ package com.ateam.funshoppers.ui.activity;
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Dialog;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -82,6 +83,7 @@ public class MainNavigationActivity extends BaseActivity
     NavigationView navigationView;
 
     BeaconManager mBeaconManager;
+    BluetoothAdapter bluetoothAdapter;
     TrackedBeacon mBeacon;
 
     public static Intent getStartIntent(Context context) {
@@ -207,19 +209,8 @@ public class MainNavigationActivity extends BaseActivity
         try {
             if (!mBeaconManager.checkAvailability()) {
 
-                final Dialog bleDialog = DialogBuilder.createSimpleOkErrorDialog(
-                        this,
-                        getString(R.string.dialog_error_ble_not_enabled),
-                        getString(R.string.error_message_please_enable_bluetooth)
-                );
-                bleDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-                    @Override
-                    public void onDismiss(DialogInterface dialog) {
-                        finish();
-                        System.exit(0);
-                    }
-                });
-                bleDialog.show();
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, RESULT_OK);
 
             }
         } catch (RuntimeException e) {
@@ -239,54 +230,7 @@ public class MainNavigationActivity extends BaseActivity
             bleDialog.show();
         }
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_ma, menu);
-        return true;
-    }
 
-    /**
-     * Event Handling for Individual menu item selected
-     * Identify single menu item by it's id
-     * */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-
-        switch (item.getItemId())
-        {
-            case R.id.menu_bookmark:
-                // Single menu item is selected do something
-                // Ex: launching new activity/screen or show alert message
-                Toast.makeText(MainNavigationActivity.this, "Bookmark is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.menu_save:
-                Toast.makeText(MainNavigationActivity.this, "Save is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.menu_search:
-                Toast.makeText(MainNavigationActivity.this, "Search is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.menu_share:
-                Toast.makeText(MainNavigationActivity.this, "Share is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.menu_delete:
-                Toast.makeText(MainNavigationActivity.this, "Delete is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.logout:
-                Toast.makeText(MainNavigationActivity.this, "Preferences is Selected", Toast.LENGTH_SHORT).show();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
     @Override
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {

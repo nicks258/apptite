@@ -37,59 +37,6 @@ import com.ateam.funshoppers.util.PreferencesUtil;
 @SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity {
     public static int glCount = 0;
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main_navigation, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                FragmentManager fm = getFragmentManager();
-                if (fm.getBackStackEntryCount() > 0) {
-                    fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                } else {
-                    finish();
-                }
-                return true;
-            case R.id.action_settings:
-                launchSettingsActivity();
-                return true;
-            case R.id.action_view_on_github:
-                launchGitHubPage();
-                return true;
-            case R.id.action_help:
-                launchHelpPage();
-                return true;
-            case R.id.action_donate:
-                launchDonatePage();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-
-    private void launchGitHubPage() {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://github.com/vitas/beaconloc"));
-        startActivity(browserIntent);
-    }
-
-    private void launchHelpPage() {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://github.com/vitas/beaconloc/wiki/Help"));
-        startActivity(browserIntent);
-    }
-
-    private void launchDonatePage() {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/SameBits"));
-        startActivity(browserIntent);
-    }
-
     protected void launchSettingsActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivityForResult(intent, Constants.REQ_GLOBAL_SETTING);

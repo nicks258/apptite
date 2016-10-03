@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    -->
+    <item android:id="@+id/gotomall"
+        android:title="Go To Mall" />
+
+    <item android:id="@+id/faq"
+        android:title="FAQ" />
+
+    <item android:id="@+id/contactus"
+        android:title="Contact Us" />
+
+    <item android:id="@+id/myaccount"
+        android:title="My Account" />
+
+
+
+    <item android:id="@+id/logout"
+        android:title="Logout" />
+</menu>

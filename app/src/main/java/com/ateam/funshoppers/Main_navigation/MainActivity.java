@@ -1,19 +1,14 @@
 package com.ateam.funshoppers.Main_navigation;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 
-import android.app.ActivityManager;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,12 +16,6 @@ import android.widget.Toast;
 
 import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
-
-
-import java.util.List;
-
-
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -142,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_ma, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
@@ -154,8 +143,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.menu_save) {
-            Toast.makeText(this,"Save",Toast.LENGTH_SHORT).show();
+        if (id == R.id.myaccount) {
+            Toast.makeText(this,"My Account",Toast.LENGTH_SHORT).show();
             return true;
         }
         else if(id==R.id.logout)
@@ -166,7 +155,19 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this , LoginActivity.class);
             startActivity(intent);
         }
-        else if(id == R.id.menu_bookmark)
+        else if(id==R.id.faq)
+        {
+            Toast.makeText(this,"faq",Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if(id==R.id.contactus)
+        {
+            Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "funshoppers258@gmail.com"));
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Query");
+
+            startActivity(intent);
+        }
+        else if(id == R.id.gotomall)
         {
             Intent  intent = new Intent(MainActivity.this, MainNavigationActivity.class);
             startActivity(intent);
