@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                    case R.id.inbox:
+                    case R.id.home:
                        // Toast.makeText(getApplicationContext(),"Inbox Selected", Toast.LENGTH_SHORT).show();
                         Home_page fragment = new Home_page();
                         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

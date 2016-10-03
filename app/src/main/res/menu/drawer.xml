@@ -4,46 +4,59 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/inbox"
+            android:id="@+id/home"
             android:checked="false"
             android:icon="@drawable/ic_inbox_black"
-            android:title="@string/inbox_string" />
+            android:title="Home Page" />
 
         <item
-            android:id="@+id/starred"
+            android:id="@+id/electronics"
             android:checked="false"
             android:icon="@drawable/ic_star_black"
-            android:title="@string/starred_string" />
+            android:title="Electronics" />
 
         <item
-            android:id="@+id/sent_mail"
+            android:id="@+id/lifestyle"
             android:checked="false"
             android:icon="@drawable/ic_send_black"
-            android:title="@string/sent_mail_string" />
+            android:title="Lifestyle" />
 
         <item
-            android:id="@+id/drafts"
+            android:id="@+id/homes"
             android:checked="false"
             android:icon="@drawable/ic_drafts_black"
-            android:title="@string/draft_string" />
+            android:title="Homes and Furniture" />
 
 
         <item
-            android:id="@+id/allmail"
+            android:id="@+id/books"
             android:checked="false"
             android:icon="@drawable/ic_email_black"
-            android:title="@string/all_mail_string" />
+            android:title="Books and More" />
         <item
-            android:id="@+id/trash"
+            android:id="@+id/automotive"
             android:checked="false"
             android:icon="@drawable/ic_delete_black"
-            android:title="@string/trash_string" />
+            android:title="Automotive" />
         <item
-            android:id="@+id/spam"
+            android:id="@+id/offer"
             android:checked="false"
             android:icon="@drawable/ic_error_black"
-            android:title="@string/spam_string" />
+            android:title="Offer Zone" />
 
     </group>
-
+    <group
+        android:id="@+id/option"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/mycart"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/myaccountt"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="My Account" />
+    </group>
 </menu>
