@@ -17,11 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true"
-<<<<<<< HEAD
             android:hint="Phone Number" />
-=======
-            android:hint="@string/hint_name" />
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     </android.support.design.widget.TextInputLayout>
 
 
@@ -41,32 +37,21 @@
     <Button android:id="@+id/btn_login"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:text="Log In"
-=======
-        android:text="@string/btn_sign_up"
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
         android:background="@color/colorPrimary"
         android:layout_marginTop="40dp"
         android:textColor="@android:color/white"/>
 <TextView
-<<<<<<< HEAD
     android:paddingTop="25dp"
     android:layout_gravity="center"
-=======
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Don't have an account?"/>
     <TextView
-<<<<<<< HEAD
         android:paddingTop="13dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
 
-=======
-        android:layout_width="wrap_content"
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textColor="@color/finestBlack"

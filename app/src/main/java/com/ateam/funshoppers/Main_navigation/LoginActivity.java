@@ -1,16 +1,15 @@
 package com.ateam.funshoppers.Main_navigation;
 
-<<<<<<< HEAD
+
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-=======
-import android.app.AlertDialog;
+
+
 import android.content.Intent;
 import android.os.Bundle;
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
@@ -22,20 +21,19 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.ateam.funshoppers.R;
-<<<<<<< HEAD
+
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
-=======
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
+
 
 
 public class LoginActivity extends ActionBarActivity {
 
     EditText etusername , etpassword;
-<<<<<<< HEAD
-   private LocalDatabase localDatabase;
-=======
+
+
+
     LocalDatabase localDatabase;
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
+
     private TextInputLayout inputLayoutName,  inputLayoutPassword;
     private Button btnSignUp;
     @Override
@@ -151,11 +149,9 @@ public class LoginActivity extends ActionBarActivity {
         serverRequests.fetchDataInBackground(contact , new GetUserCallback() {
 
             @Override
-<<<<<<< HEAD
+
             public void done(final Contact returnedContact) {
-=======
-            public void done(Contact returnedContact) {
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
+
                 if(returnedContact == null)
                 {
                    //show an error message
@@ -167,7 +163,7 @@ public class LoginActivity extends ActionBarActivity {
                 }
                 else
                 {
-<<<<<<< HEAD
+
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AppCompatAlertDialogStyle);
                     builder.setTitle("Dialog");
                     builder.setMessage("Hello here is the best example of AppCompatAlertDialog from www.takeoffandroid.com. Lets make use of it");
@@ -193,17 +189,13 @@ public class LoginActivity extends ActionBarActivity {
 
 
 
-=======
-                    //Log user in
-                    localDatabase.storeData(returnedContact);
-                    localDatabase.setUserLoggedIn(true);
 
-                    Intent intent = new Intent(LoginActivity.this , MainActivity.class);
-                    startActivity(intent);
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
+
+
                 }
 
             }
         });
-    }
+
+}
 }

@@ -5,10 +5,7 @@
     <color name="finestWhite30">#4DFFFFFF</color>
 
     <color name="orange">#FA0</color>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
+
     <color name="solid_one">#4abc96</color>
     <color name="solid_two">#357180</color>
     <color name="solid_three">#ffce00</color>
@@ -30,12 +27,7 @@
 
     <!--Splash Screen-->
     <item name="splash_background" type="color">@color/colorPrimary</item>
-<<<<<<< HEAD
-=======
-=======
 
->>>>>>> e94cbd24955711349373a89c0a95b70121817eb5
->>>>>>> de57d8b7fc7ce69b397cdc65b2db21e023c503dc
     <color name="finestGray10">#1AD2D2D2</color>
     <color name="finestGray20">#33D2D2D2</color>
     <color name="ColorPrimary">#FF5722</color>

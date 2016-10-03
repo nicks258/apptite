@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorAccent">#5fa3d0</item>
         <item name="android:textColorPrimary">#000000</item>
         <item name="android:background">#FFFFFF</item>
     </style>
-    <style name="ColoredButton" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@android:color/white</item>
-        <item name="android:colorControlHighlight">@android:color/darker_gray</item>
-        <item name="android:textColor">@android:color/black</item>
-    </style>
 
-=======
+
+
 
     <style name="ColoredButton" parent="Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@android:color/white</item>
