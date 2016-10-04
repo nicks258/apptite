@@ -1,3 +1,11 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,6 +21,13 @@
     android:paddingRight="20dp"
     android:paddingTop="60dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/applogo2"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="top|center"
+        />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_layout_name"
@@ -67,3 +82,4 @@
         android:onClick="onRegisterClick"/>
 </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
+    </ScrollView>

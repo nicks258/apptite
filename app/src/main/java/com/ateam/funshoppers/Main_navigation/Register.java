@@ -168,7 +168,7 @@ public class Register extends Activity {
                     break;
                 case R.id.input_phoner:
                     validatePhone();
-                    validateEmail();
+
                     break;
                 case R.id.input_passwordr:
                     validatePassword();

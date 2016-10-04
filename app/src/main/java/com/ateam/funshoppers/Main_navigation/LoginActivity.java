@@ -187,16 +187,18 @@ public class LoginActivity extends ActionBarActivity {
                 } else {
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AppCompatAlertDialogStyle);
-                    builder.setTitle("Dialog");
-                    builder.setMessage("Hello here is the best example of AppCompatAlertDialog from www.takeoffandroid.com. Lets make use of it");
-                    builder.setPositiveButton("In Mall", new DialogInterface.OnClickListener() {
+                    builder.setTitle("Welcome Back!!");
+                    builder.setMessage("Choose your location");
+                    builder.setCancelable(false);
+
+                    builder.setPositiveButton("In Store", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             Intent intent = new Intent(LoginActivity.this, MainNavigationActivity.class);
                             startActivity(intent);
                         }
                     });
-                    builder.setNegativeButton("Not In Mall", new DialogInterface.OnClickListener() {
+                    builder.setNegativeButton("Not In Store", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             localDatabase.storeData(returnedContact);

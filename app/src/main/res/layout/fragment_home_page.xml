@@ -28,8 +28,10 @@
             android:layout_alignBottom="@id/webviewMain"
             android:layout_alignRight="@id/webviewMain"
             android:layout_gravity="right"
+
             android:layout_margin="@dimen/fab_margin"
-            android:src="@android:drawable/ic_dialog_email" />
+
+            android:src="@drawable/chat" />
 
         <LinearLayout
             android:id="@+id/lLayoutRequestError"
