@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">6dp</dimen>
     <dimen name="toolbarHeight">56dp</dimen>
     <dimen name="menusWidth">168dp</dimen>
-
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="defaultDividerHeight">4dp</dimen>
     <dimen name="defaultProgressBarHeight">1dp</dimen>
     <dimen name="defaultTitleSize">14dp</dimen>
@@ -16,7 +16,7 @@
     <dimen name="defaultMenuLayoutMargin">4dp</dimen>
     <dimen name="defaultMenuCornerRadius">2dp</dimen>
     <dimen name="activity_vertical_margin">6dp</dimen>
-    <dimen name="fab_margin">8dp</dimen>
+
 
     <dimen name="text_headline_large">30.0sp</dimen>
     <dimen name="text_headline">24sp</dimen>

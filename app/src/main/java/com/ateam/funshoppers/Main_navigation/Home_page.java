@@ -14,6 +14,7 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringDef;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -40,6 +41,7 @@ import com.ateam.funshoppers.R;
 public class Home_page extends Fragment {
     GPSTracker gps;
 
+    private FloatingActionButton fab;
 
     LocalDatabase localDatabase;
     private CoordinatorLayout coordinatorLayout;
@@ -68,6 +70,14 @@ private ProgressDialog progressDialog;
         coordinatorLayout = (CoordinatorLayout) v.findViewById(R.id.coordinatorLayout);
         mlLayoutRequestError = (LinearLayout) v.findViewById(R.id.lLayoutRequestError);
         mhErrorLayoutHide = getErrorLayoutHideHandler();
+        fab = (FloatingActionButton) v.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ChatMessager.class);
+                startActivity(intent);          }
+
+        });
 
 
         gps = new GPSTracker(getActivity());
