@@ -37,10 +37,7 @@ import com.ateam.funshoppers.util.PreferencesUtil;
 @SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity {
     public static int glCount = 0;
-    protected void launchSettingsActivity() {
-        Intent intent = new Intent(this, SettingsActivity.class);
-        startActivityForResult(intent, Constants.REQ_GLOBAL_SETTING);
-    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

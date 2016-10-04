@@ -29,7 +29,7 @@
 
         <activity
             android:name=".ui.activity.MainNavigationActivity"
-            android:label="@string/title_activity_main_navigation"
+
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Main_navigation.MainActivity"></activity>
         <activity android:name=".AppIntro.ImageBackgroundExampleActivity">
@@ -44,10 +44,10 @@
         <activity android:name=".Main_navigation.Register" />
         <activity
             android:name=".ui.activity.SettingsActivity"
-            android:label="@string/title_activity_settings" />
+             />
         <activity
             android:name=".ui.activity.BeaconActionActivity"
-            android:label="@string/title_activity_beacon" />
+            />
 
         <receiver android:name=".receiver.BeaconRegionReceiver">
             <intent-filter>

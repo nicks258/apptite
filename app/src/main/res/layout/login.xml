@@ -80,6 +80,9 @@
         android:textColor="@color/finestBlack"
         android:textStyle="bold"
         android:onClick="onRegisterClick"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
 </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
     </ScrollView>

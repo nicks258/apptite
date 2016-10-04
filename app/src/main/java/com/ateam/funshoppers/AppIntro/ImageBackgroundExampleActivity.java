@@ -20,8 +20,8 @@ public class ImageBackgroundExampleActivity extends AhoyOnboarderActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("Phygit Technology", "Beacon for mobile marketing and e-commerce.", R.drawable.beaconlogo);
-        AhoyOnboarderCard ahoyOnboarderCard2 = new AhoyOnboarderCard("Dine Out", "First location based product and pricing comparison app with trusted retailers.", R.drawable.maplogo);
+        AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("Phygit Technology", "Beacon for mobile marketing and e-commerce.", R.drawable.ic_access_point_network);
+        AhoyOnboarderCard ahoyOnboarderCard2 = new AhoyOnboarderCard("Search by location", "First location based product and pricing comparison app with trusted retailers.", R.drawable.ic_add_location_white_24dp);
         AhoyOnboarderCard ahoyOnboarderCard3 = new AhoyOnboarderCard("Get Cashback", "Earn cashback each time when you make purchase with us.", R.drawable.reward);
 
         ahoyOnboarderCard1.setBackgroundColor(R.color.black_transparent);
@@ -42,7 +42,7 @@ public class ImageBackgroundExampleActivity extends AhoyOnboarderActivity {
         setFinishButtonTitle("Get Started");
         showNavigationControls(true);
         //setGradientBackground();
-        setImageBackground(R.drawable.download);
+        setImageBackground(R.drawable.appintrobackp);
 
         Typeface face = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
         setFont(face);

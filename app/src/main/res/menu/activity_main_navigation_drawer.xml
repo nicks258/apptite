@@ -8,27 +8,35 @@
             android:id="@+id/Main"
             android:icon="@drawable/ic_tag_black_24dp"
             android:title="Main" />
+        </group>
+    <group
+        android:id="@+id/nav1"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_scan_around"
             android:icon="@drawable/ic_tap_and_play_black_24dp"
             android:title="@string/action_scan_around" />
+        </group>
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/nav2">
+
         <item
             android:id="@+id/nav_scan_radar"
             android:icon="@drawable/ic_radar_black_24dp"
             android:title="@string/action_scan_managed" />
+        </group>
+    <group
+        android:id="@+id/nav3"
+        android:checkableBehavior="single"
+        >
+
         <item
             android:id="@+id/nav_tracked_list"
             android:icon="@drawable/ic_tag_black_24dp"
             android:title="@string/action_tracked_list" />
     </group>
 
-    <group
-        android:id="@+id/menu_bottom"
-        android:checkableBehavior="none">
-        <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="@string/action_settings" />
-    </group>
+
 
 </menu>

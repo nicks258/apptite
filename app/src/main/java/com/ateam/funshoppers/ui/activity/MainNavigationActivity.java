@@ -50,6 +50,7 @@ import android.widget.Toast;
 
 
 import com.ateam.funshoppers.BeaconLocatorApp;
+import com.ateam.funshoppers.Main_navigation.MainActivity;
 import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.model.TrackedBeacon;
 import com.ateam.funshoppers.ui.fragment.DetectedBeaconsFragment;
@@ -69,7 +70,7 @@ public class MainNavigationActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
-
+    int backButtonCount=0;
     @Bind(R.id.fab)
     FloatingActionButton fab;
 
@@ -231,14 +232,7 @@ public class MainNavigationActivity extends BaseActivity
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
+
 
 
     @Override
@@ -256,9 +250,7 @@ public class MainNavigationActivity extends BaseActivity
             case R.id.nav_scan_around:
                 launchScanBeaconView();
                 break;
-            case R.id.nav_settings:
-                launchSettingsActivity();
-                break;
+
             case R.id.nav_tracked_list:
                 launchTrackedListView();
                 break;
@@ -379,5 +371,19 @@ public class MainNavigationActivity extends BaseActivity
     private void launchTrackedListView() {
         addTrackedListFragment();
     }
+    @Override
 
+    public void onBackPressed()
+    {
+        if(backButtonCount >= 1)
+        {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(this, "Press the back button once again to go to Store.", Toast.LENGTH_SHORT).show();
+            backButtonCount++;
+        }
+    }
 }

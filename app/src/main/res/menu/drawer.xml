@@ -33,11 +33,7 @@
             android:checked="false"
             android:icon="@drawable/brands"
             android:title="Brands" />
-        <item
-            android:id="@+id/automotive"
-            android:checked="false"
-            android:icon="@drawable/auto"
-            android:title="Automotive" />
+
         <item
             android:id="@+id/offer"
             android:checked="false"
@@ -51,12 +47,12 @@
         <item
             android:id="@+id/mycart"
             android:checked="false"
-            android:icon="@drawable/mycart"
-            android:title="My Cart" />
+            android:icon="@drawable/myacc"
+            android:title="My Account" />
         <item
             android:id="@+id/myaccountt"
             android:checked="false"
-            android:icon="@drawable/myacc"
-            android:title="My Account" />
+            android:icon="@drawable/mycart"
+            android:title="My Orders" />
     </group>
 </menu>

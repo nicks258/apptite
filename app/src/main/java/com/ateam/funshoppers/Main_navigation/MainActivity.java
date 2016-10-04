@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     View view;
     String da;
+    int backButtonCount=0;
     LayoutInflater mInflater;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
@@ -102,16 +103,17 @@ public class MainActivity extends AppCompatActivity {
                         android.support.v4.app.FragmentTransaction brandsTransaction = getSupportFragmentManager().beginTransaction();
                         brandsTransaction.replace(R.id.frame,brands);
                         brandsTransaction.commit();                        return true;
-                    case R.id.automotive:
-                        Toast.makeText(getApplicationContext(),"Automotive", Toast.LENGTH_SHORT).show();
-                        return true;
+
                     case R.id.offer:
                         Offerzone offerzone = new Offerzone();
                         android.support.v4.app.FragmentTransaction offerTransaction = getSupportFragmentManager().beginTransaction();
                         offerTransaction.replace(R.id.frame,offerzone);
                         offerTransaction.commit();                        return true;
                     case R.id.mycart:
-                        Toast.makeText(getApplicationContext(),"My Cart", Toast.LENGTH_SHORT).show();
+                        MyCart myCart = new MyCart();
+                        android.support.v4.app.FragmentTransaction cartTransaction = getSupportFragmentManager().beginTransaction();
+                        cartTransaction.replace(R.id.frame,myCart);
+                        cartTransaction.commit();
                         return true;
                     case R.id.myaccountt:
                         MyAccount myAccount = new MyAccount();
@@ -177,7 +179,10 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.myaccount) {
-            Toast.makeText(this,"My Account",Toast.LENGTH_SHORT).show();
+            MyCart myCart = new MyCart();
+            android.support.v4.app.FragmentTransaction cartTransaction = getSupportFragmentManager().beginTransaction();
+            cartTransaction.replace(R.id.frame,myCart);
+            cartTransaction.commit();
             return true;
         }
         else if(id==R.id.logout)
@@ -190,7 +195,10 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(id==R.id.faq)
         {
-            Toast.makeText(this,"faq",Toast.LENGTH_SHORT).show();
+            Faq faq = new Faq();
+            android.support.v4.app.FragmentTransaction faqTransaction = getSupportFragmentManager().beginTransaction();
+            faqTransaction.replace(R.id.frame,faq);
+            faqTransaction.commit();
             return true;
         }
         else if(id==R.id.contactus)
@@ -239,6 +247,22 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    @Override
 
+    public void onBackPressed()
+    {
+        if(backButtonCount >= 1)
+        {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(this, "Press the back button once again to close the application.", Toast.LENGTH_SHORT).show();
+            backButtonCount++;
+        }
+    }
 
 }
