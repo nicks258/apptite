@@ -24,5 +24,9 @@ Funshopper portal and utilize it for negotiating the price of required products
 with the retailer. And receive cash back on delivery. While on the other 
 retailers would never miss their nearby customers by making their local presence 
 strong.
-There are lot of new features like share button to share the pricing and product to your near and dear ones and chat with them as well, searching with exact location and current location for nearby shops. Our search will help you get anything anywhere soon.
+
+There are lot of new features like share button to share the pricing and product 
+to your near and dear ones and chat with them as well, searching with exact 
+location and current location for nearby shops. Our search will help you get 
+anything anywhere soon.
 
