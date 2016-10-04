@@ -20,7 +20,7 @@
         android:required="true" />
 
     <application
-        android:name=".Main_navigation.MyApplication"
+        android:name=".BeaconLocatorApp"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,17 +39,20 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-      <activity android:name=".Main_navigation.MainActivity"/>
+      <activity android:name=".Main_navigation.MainActivity">
+
+          </activity>
 
         <activity android:name=".AppIntro.ImageBackgroundExampleActivity">
-
-      </activity>
-        <activity android:name=".AppIntro.SolidBackgroundExampleActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+      </activity>
+        <activity android:name=".AppIntro.SolidBackgroundExampleActivity" >
+
             </activity>
 
 
@@ -83,14 +86,9 @@
             </intent-filter>
         </receiver>
 
-        <receiver
-            android:name=".Main_navigation.ConnectivityReceiver"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
+
 
     </application>
+
 
 </manifest>

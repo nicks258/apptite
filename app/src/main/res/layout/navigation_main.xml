@@ -37,9 +37,11 @@
         <TextView
             android:id="@+id/user_name"
             android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textStyle="italic"
             android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:text="loin"/>
+            android:textColor="@color/second_slide_buttons"
+            />
         </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>
 

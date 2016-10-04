@@ -2,10 +2,14 @@ package com.ateam.funshoppers.Main_navigation;
 
 
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 
@@ -27,22 +31,22 @@ import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
 
 
 
-public class LoginActivity extends ActionBarActivity implements ConnectivityReceiver.ConnectivityReceiverListener{
+public class LoginActivity extends ActionBarActivity {
 
-    EditText etusername , etpassword;
-
+    EditText etusername, etpassword;
 
 
     LocalDatabase localDatabase;
 
-    private TextInputLayout inputLayoutName,  inputLayoutPassword;
+    private TextInputLayout inputLayoutName, inputLayoutPassword;
     private Button btnSignUp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_name);
-        checkConnection();
+
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
         etusername = (EditText) findViewById(R.id.input_phone);
 
@@ -62,20 +66,16 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
     }
 
 
-
-    public void onRegisterClick(View view)
-    {
-        Intent intent = new Intent(LoginActivity.this , Register.class);
+    public void onRegisterClick(View view) {
+        Intent intent = new Intent(LoginActivity.this, Register.class);
         startActivity(intent);
     }
 
-    private void submitForm()
-    {
-        checkConnection();
+    private void submitForm() {
+
         if (!validateName()) {
             return;
         }
-
 
 
         if (!validatePassword()) {
@@ -84,57 +84,32 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
         String username = etusername.getText().toString();
         String password = etpassword.getText().toString();
 
-        Contact contact = new Contact(username,  password);
-        Log.e("uname = " , contact.username);
+        Contact contact = new Contact(username, password);
+        Log.e("uname = ", contact.username);
         authenticate(contact);
 
     }
 
-    private void checkConnection() {
-        boolean isConnected = ConnectivityReceiver.isConnected();
-        showSnack(isConnected);
-    }
 
     // Showing the status in Snackbar
-    private void showSnack(boolean isConnected) {
-        String message;
-        int color;
-        if (isConnected) {
-            message = "Welcome To Funshoppers";
-            color = Color.WHITE;
-        } else {
-            message = "Sorry! Not connected to internet";
-            color = Color.RED;
-        }
 
-        Snackbar snackbar = Snackbar
-                .make(findViewById(R.id.coordinatorLayout), message, Snackbar.LENGTH_LONG);
-
-        View sbView = snackbar.getView();
-        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-        textView.setTextColor(color);
-        snackbar.show();
-    }
 
     @Override
     protected void onResume() {
         super.onResume();
 
         // register connection status listener
-        MyApplication.getInstance().setConnectivityListener(this);
+
     }
 
     /**
      * Callback will be triggered when there is change in
      * network connection
      */
-    @Override
-    public void onNetworkConnectionChanged(boolean isConnected) {
-        showSnack(isConnected);
-    }
+
 
     private boolean validateName() {
-        if (etusername.length()!=10) {
+        if (etusername.length() != 10) {
             inputLayoutName.setError(getString(R.string.err_msg_phone));
             requestFocus(etusername);
             return false;
@@ -144,11 +119,13 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
 
         return true;
     }
+
     private void requestFocus(View view) {
         if (view.requestFocus()) {
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
         }
     }
+
     private boolean validatePassword() {
         if (etpassword.getText().toString().trim().isEmpty()) {
             inputLayoutPassword.setError(getString(R.string.err_msg_password));
@@ -160,6 +137,7 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
 
         return true;
     }
+
     private class MyTextWatcher implements TextWatcher {
 
         private View view;
@@ -187,33 +165,31 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
         }
     }
 
-    private void authenticate(Contact contact)
-    {
+    private void authenticate(Contact contact) {
+        if (haveNetworkConnection() == true) {
+
         ServerRequests serverRequests = new ServerRequests(LoginActivity.this);
 
 
-        serverRequests.fetchDataInBackground(contact , new GetUserCallback() {
+        serverRequests.fetchDataInBackground(contact, new GetUserCallback() {
 
             @Override
 
             public void done(final Contact returnedContact) {
 
-                if(returnedContact == null)
-                {
-                   //show an error message
+                if (returnedContact == null) {
+                    //show an error message
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                     builder.setMessage("Username & Password don't match!");
-                    builder.setPositiveButton("OK" , null);
+                    builder.setPositiveButton("OK", null);
                     builder.show();
 
-                }
-                else
-                {
+                } else {
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AppCompatAlertDialogStyle);
                     builder.setTitle("Dialog");
                     builder.setMessage("Hello here is the best example of AppCompatAlertDialog from www.takeoffandroid.com. Lets make use of it");
-                    builder.setPositiveButton("In Mall",new DialogInterface.OnClickListener() {
+                    builder.setPositiveButton("In Mall", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             Intent intent = new Intent(LoginActivity.this, MainNavigationActivity.class);
@@ -226,15 +202,11 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
                             localDatabase.storeData(returnedContact);
                             localDatabase.setUserLoggedIn(true);
 
-                            Intent intent = new Intent(LoginActivity.this , MainActivity.class);
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
                         }
                     });
                     builder.show();
-                    //Log user in
-
-
-
 
 
 
@@ -243,5 +215,37 @@ public class LoginActivity extends ActionBarActivity implements ConnectivityRece
             }
         });
 
+    }
+        else{
+            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AppCompatAlertDialogStyle);
+            builder.setTitle("No Internet");
+            builder.setMessage("Click on Setting to connect");
+            builder.setPositiveButton("OK", null);
+
+            builder.setNegativeButton("Setting", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
+                }
+            });
+            builder.show();
+        }
+
 }
+    private boolean haveNetworkConnection() {
+        boolean haveConnectedWifi = false;
+        boolean haveConnectedMobile = false;
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo[] netInfo = cm.getAllNetworkInfo();
+        for (NetworkInfo ni : netInfo) {
+            if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+                if (ni.isConnected())
+                    haveConnectedWifi = true;
+            if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
+                if (ni.isConnected())
+                    haveConnectedMobile = true;
+        }
+        return haveConnectedWifi || haveConnectedMobile;
+    }
 }
