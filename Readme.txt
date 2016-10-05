@@ -2,6 +2,16 @@ Using "Beacon toy" app from the playstore
 (https://play.google.com/store/apps/details?id=com.uriio&hl=en)
 We can turn our mobile into a beacon.
 
+Youtube Link:
+https://youtu.be/XCMhSdcvds4
+https://youtu.be/N4Vb_0PdwNA
+https://youtu.be/ixBC2fvovlk
+https://youtu.be/d_EULxq32Qg
+https://youtu.be/JifG3LuMZTw
+https://youtu.be/BAR4sJjfxJ8
+https://youtu.be/oj9e9ZOr7H8
+
+
 Our application(Funshoppers) can be used in distributing messages at a specific 
 point of interest using Beacon, for example a store, a bus stop, a room or a 
 more  specific location like a piece of furniture or a vending machine. 
