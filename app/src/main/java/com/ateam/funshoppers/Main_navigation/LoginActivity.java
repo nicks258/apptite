@@ -2,15 +2,17 @@ package com.ateam.funshoppers.Main_navigation;
 
 
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
+
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 
 
@@ -23,12 +25,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
 
 import com.ateam.funshoppers.R;
 
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
-
+import com.ateam.funshoppers.ui.fragment.Main;
 
 
 public class LoginActivity extends ActionBarActivity {
@@ -37,7 +39,8 @@ public class LoginActivity extends ActionBarActivity {
 
 
     LocalDatabase localDatabase;
-
+    NotificationManager manager;
+    Notification myNotication;
     private TextInputLayout inputLayoutName, inputLayoutPassword;
     private Button btnSignUp;
 
@@ -46,7 +49,7 @@ public class LoginActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_name);
-
+        manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
         etusername = (EditText) findViewById(R.id.input_phone);
 
@@ -91,21 +94,17 @@ public class LoginActivity extends ActionBarActivity {
     }
 
 
-    // Showing the status in Snackbar
 
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        // register connection status listener
+
 
     }
 
-    /**
-     * Callback will be triggered when there is change in
-     * network connection
-     */
+
 
 
     private boolean validateName() {
@@ -185,6 +184,25 @@ public class LoginActivity extends ActionBarActivity {
                     builder.show();
 
                 } else {
+
+                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+
+                    PendingIntent pendingIntent = PendingIntent.getActivity(LoginActivity.this, 1, intent, 0);
+
+                    Notification.Builder builderr = new Notification.Builder(LoginActivity.this);
+
+                    builderr.setAutoCancel(false);
+
+                    builderr.setContentTitle("Fun Shopper");
+                    builderr.setContentText("Check new Diwali Offers ");
+                    builderr.setSmallIcon(R.drawable.applogo);
+                    builderr.setContentIntent(pendingIntent);
+                    builderr.setSubText("Valid till 31st october");
+                    builderr.setNumber(100);
+                    builderr.build();
+
+                    myNotication = builderr.getNotification();
+                    manager.notify(11, myNotication);
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AppCompatAlertDialogStyle);
                     builder.setTitle("Welcome Back!!");
