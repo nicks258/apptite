@@ -34,6 +34,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 
 import com.ateam.funshoppers.R;
@@ -49,6 +50,7 @@ import com.ateam.funshoppers.util.Constants;
 import com.ateam.funshoppers.util.PreferencesUtil;
 
 import org.altbeacon.beacon.Beacon;
+import org.altbeacon.beacon.Region;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -73,7 +75,7 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
     private DetectedBeaconAdapter mBeaconsAdapter;
-
+    TextView textView;
     public static DetectedBeaconsFragment newInstance() {
         DetectedBeaconsFragment beaconsFragment = new DetectedBeaconsFragment();
         return beaconsFragment;
@@ -93,7 +95,9 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
         View fragmentView = inflater.inflate(R.layout.fragment_scan_beacons, container, false);
         ButterKnife.bind(this, fragmentView);
 
-
+       // textView = (TextView)fragmentView.findViewById(R.id.beacon_item_uuid_value);
+       // textView.setText(dBeacon.getUUID().substring(7));
+       // textView.setText("Yes i am he");
         Log.d("Sumit","ioo");
         setupToolbar();
         setupRecyclerView();
@@ -129,7 +133,8 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
         mListBeacons.setAdapter(mBeaconsAdapter);
 
         registerForContextMenu(mListBeacons);
-
+        Log.d("god",Integer.toString(viewFromEmpty.getId()));
+        Log.d("god",Integer.toString(mListBeacons.getId()));
         mProgressBar.setVisibility(View.GONE);
 
     }
@@ -141,6 +146,7 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
             }
 
             public void onTick(long tick) {
+               // Log.d("lion",Long.toString(tick));
             }
         };
     }
@@ -215,6 +221,7 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
 
     @Override
     public void onBeaconLongClick(int position) {
+        Log.d("q","qqqq");
         mListBeacons.openContextMenu(position);
     }
 
@@ -236,10 +243,12 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
 
         switch (item.getItemId()) {
             case R.id.action_manage_add:
+
+               // Log.d("god",Integer.toString(info.position));
                 //find better way to change fragment from scan to tracked
-                Intent intent = MainNavigationActivity.getStartIntent(getActivity());
-                intent.putExtra(Constants.ARG_BEACON, new TrackedBeacon((IManagedBeacon) mBeaconsAdapter.getItem(info.position)));
-                startActivity(intent);
+               // Intent intent = MainNavigationActivity.getStartIntent(getActivity());
+               // intent.putExtra(Constants.ARG_BEACON, new TrackedBeacon((IManagedBeacon) mBeaconsAdapter.getItem(info.position)));
+               // startActivity(intent);
                 return true;
             case R.id.action_filter_add:
                 //TODO
@@ -254,7 +263,7 @@ public class DetectedBeaconsFragment extends ScanFragment implements BeaconAdapt
         while (iterator.hasNext()) {
             DetectedBeacon dBeacon = new DetectedBeacon(iterator.next());
 
-            Log.d("nicks",dBeacon.getEddystoneURL());
+           // Log.d("nicks",dBeacon.getEddystoneURL());
 
             dBeacon.setTimeLastSeen(System.currentTimeMillis());
 

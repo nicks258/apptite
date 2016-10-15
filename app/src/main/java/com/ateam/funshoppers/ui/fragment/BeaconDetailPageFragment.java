@@ -30,9 +30,7 @@ import com.ateam.funshoppers.model.ActionRegion;
 import org.altbeacon.beacon.Region;
 
 
-/**
- * Created by vitas on 20/12/15.
- */
+
 public class BeaconDetailPageFragment extends PageBeaconFragment {
 
 

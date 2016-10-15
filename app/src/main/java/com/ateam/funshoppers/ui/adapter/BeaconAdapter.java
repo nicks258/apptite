@@ -19,6 +19,9 @@
 package com.ateam.funshoppers.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.ListView;
 
 
 import com.ateam.funshoppers.model.IManagedBeacon;
@@ -29,9 +32,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by vitas on 09/12/2015.
- */
 
 public abstract class BeaconAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {
 
@@ -96,10 +96,17 @@ public abstract class BeaconAdapter<VH extends RecyclerView.ViewHolder> extends 
     }
 
     public void setOnBeaconLongClickListener(OnBeaconLongClickListener onBeaconLongClickListener) {
+        Log.d("suvo","lpp" );
         this.onBeaconLongClickListener = onBeaconLongClickListener;
+
     }
 
+
+
+
+
     public interface OnBeaconLongClickListener {
+
         void onBeaconLongClick(int position);
     }
 }

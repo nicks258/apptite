@@ -21,9 +21,7 @@ package com.ateam.funshoppers.model;
 
 import com.ateam.funshoppers.util.Constants;
 
-/**
- * Created by vitas on 03/01/16.
- */
+
 public class RegionName {
     private String prefix;
     private String beaconId;

@@ -30,7 +30,6 @@ import android.widget.EditText;
 import com.ateam.funshoppers.R;
 
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
-import com.ateam.funshoppers.ui.fragment.Main;
 
 
 public class LoginActivity extends ActionBarActivity {

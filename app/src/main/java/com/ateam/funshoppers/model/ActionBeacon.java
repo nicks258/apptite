@@ -21,9 +21,7 @@ package com.ateam.funshoppers.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by vitas on 28/12/15.
- */
+
 public class ActionBeacon implements Parcelable {
     public static final Creator<ActionBeacon> CREATOR = new Creator<ActionBeacon>() {
         @Override

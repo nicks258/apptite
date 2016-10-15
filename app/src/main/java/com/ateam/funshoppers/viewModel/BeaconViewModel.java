@@ -24,6 +24,8 @@ import android.support.v4.content.ContextCompat;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.model.DetectedBeacon;
@@ -33,11 +35,13 @@ import com.ateam.funshoppers.util.BeaconUtil;
 
 
 public class BeaconViewModel extends BaseObservable {
-
+public static FrameLayout frameLayout;
     protected IManagedBeacon mManagedBeacon;
     protected BaseFragment mFragment;
-
+    View view;
+public static TextView textView;
     public BeaconViewModel(@NonNull BaseFragment fragment, @NonNull IManagedBeacon managedBeacon) {
+
         this.mManagedBeacon = managedBeacon;
         this.mFragment = fragment;
     }
@@ -51,6 +55,8 @@ public class BeaconViewModel extends BaseObservable {
     }
 
     public String getId() {
+        Log.d("Lop",(mManagedBeacon.getId()));
+        Log.d("Qwe",mManagedBeacon.getUUID());
         return mManagedBeacon.getId();
     }
 
@@ -145,7 +151,12 @@ public class BeaconViewModel extends BaseObservable {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                launchBeaconDetailsActivity();
+               // v.getId();
+                //frameLayout = (FrameLayout)v.findViewById(R.id.content_view);
+
+                Log.d("neonicks",getUuid());
+
+
             }
         };
     }

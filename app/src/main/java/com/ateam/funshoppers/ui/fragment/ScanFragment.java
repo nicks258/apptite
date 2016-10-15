@@ -24,9 +24,11 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.util.Log;
+import android.widget.TextView;
 
 
 import com.ateam.funshoppers.BeaconLocatorApp;
+import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
 import com.ateam.funshoppers.util.Constants;
 import com.ateam.funshoppers.util.PreferencesUtil;
@@ -50,10 +52,12 @@ public abstract class ScanFragment extends BaseFragment implements BeaconConsume
     protected boolean isScanning;
     protected BeaconManager mBeaconManager;
     protected boolean needContinueScan;
-
+    TextView textView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // textView= (TextView)getActivity().findViewById(R.id.beacon_item_uuid_value) ;
+//        textView.setText("God");
         mBeaconManager = BeaconLocatorApp.from(getActivity()).getComponent().beaconManager();
         mRegion = new Region(PreferencesUtil.getDefaultRegionName(getApplicationContext()), null, null, null);
         mBeaconManager.bind(this);

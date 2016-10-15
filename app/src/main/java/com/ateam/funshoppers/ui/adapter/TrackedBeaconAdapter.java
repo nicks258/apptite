@@ -42,9 +42,7 @@ import com.ateam.funshoppers.viewModel.TrackedBeaconViewModel;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by vitas on 09/12/2015.
- */
+
 public class TrackedBeaconAdapter extends BeaconAdapter<TrackedBeaconAdapter.BindingHolder> {
 
     private Map<String, ActionBeaconAdapter> mActionAdapters = new HashMap<>();
@@ -66,6 +64,7 @@ public class TrackedBeaconAdapter extends BeaconAdapter<TrackedBeaconAdapter.Bin
 
     @Override
     public void onBindViewHolder(BindingHolder holder, final int position) {
+
         ItemTrackedBeaconBinding beaconBinding = holder.binding;
 
         ActionBeaconAdapter adapter = new ActionBeaconAdapter((TrackedBeaconsFragment) mFragment);

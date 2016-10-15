@@ -32,9 +32,6 @@ import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.util.Constants;
 
 
-/**
- * Created by vitas on 20/12/15.
- */
 public class BeaconNotificationPageFragment extends PageBeaconFragment {
 
     private String mNoneRintoneValue = "";

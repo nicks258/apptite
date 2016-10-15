@@ -46,6 +46,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -53,6 +55,7 @@ import com.ateam.funshoppers.BeaconLocatorApp;
 import com.ateam.funshoppers.Main_navigation.MainActivity;
 import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.model.TrackedBeacon;
+import com.ateam.funshoppers.ui.adapter.DetectedBeaconAdapter;
 import com.ateam.funshoppers.ui.fragment.DetectedBeaconsFragment;
 import com.ateam.funshoppers.ui.fragment.ScanFragment;
 import com.ateam.funshoppers.ui.fragment.ScanRadarFragment;
@@ -62,13 +65,15 @@ import com.ateam.funshoppers.util.DialogBuilder;
 
 import org.altbeacon.beacon.BeaconManager;
 
+import java.util.ArrayList;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainNavigationActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    TextView textView;
     public static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
     int backButtonCount=0;
     @Bind(R.id.fab)
@@ -386,4 +391,7 @@ public class MainNavigationActivity extends BaseActivity
             backButtonCount++;
         }
     }
-}
+
+
+    }
+

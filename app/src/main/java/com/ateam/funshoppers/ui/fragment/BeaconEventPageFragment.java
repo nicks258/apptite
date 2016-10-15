@@ -26,9 +26,7 @@ import com.ateam.funshoppers.R;
 import com.ateam.funshoppers.model.ActionBeacon;
 
 
-/**
- * Created by vitas on 20/12/15.
- */
+
 public class BeaconEventPageFragment extends PageBeaconFragment {
 
 

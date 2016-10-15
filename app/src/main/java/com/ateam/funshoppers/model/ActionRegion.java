@@ -24,9 +24,7 @@ import org.altbeacon.beacon.Region;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by vitas on 03/01/16.
- */
+
 public class ActionRegion {
 
     public static Region parseRegion(ActionBeacon actionBeacon) {
