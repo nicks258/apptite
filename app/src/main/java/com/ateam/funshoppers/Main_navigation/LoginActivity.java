@@ -31,15 +31,18 @@ import com.ateam.funshoppers.R;
 
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
 
+import net.rimoto.intlphoneinput.IntlPhoneInput;
+
 
 public class LoginActivity extends ActionBarActivity {
 
     EditText etusername, etpassword;
 
-
+    String myInternationalNumber;
     LocalDatabase localDatabase;
     NotificationManager manager;
     Notification myNotication;
+    IntlPhoneInput phoneInputView;
     private TextInputLayout inputLayoutName, inputLayoutPassword;
     private Button btnSignUp;
 
@@ -47,15 +50,15 @@ public class LoginActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_name);
+        phoneInputView = (IntlPhoneInput) findViewById(R.id.my_phone_input);
         manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
-        etusername = (EditText) findViewById(R.id.input_phone);
-
+      //  etusername = (EditText) findViewById(R.id.input_phone);
+        phoneInputView.hideKeyboard();
         etpassword = (EditText) findViewById(R.id.input_password);
         btnSignUp = (Button) findViewById(R.id.btn_login);
         localDatabase = new LocalDatabase(this);
-        etusername.addTextChangedListener(new MyTextWatcher(etusername));
+      //  etusername.addTextChangedListener(new MyTextWatcher(etusername));
 
         etpassword.addTextChangedListener(new MyTextWatcher(etpassword));
 
@@ -75,21 +78,24 @@ public class LoginActivity extends ActionBarActivity {
 
     private void submitForm() {
 
-        if (!validateName()) {
+       /* if (!validateName()) {
             return;
         }
-
+*/
 
         if (!validatePassword()) {
             return;
         }
-        String username = etusername.getText().toString();
-        String password = etpassword.getText().toString();
+        if(phoneInputView.isValid()) {
+            myInternationalNumber = phoneInputView.getNumber();
 
-        Contact contact = new Contact(username, password);
-        Log.e("uname = ", contact.username);
-        authenticate(contact);
+            String username = phoneInputView.getNumber();
+            String password = etpassword.getText().toString();
 
+            Contact contact = new Contact(username, password);
+            Log.e("uname = ", contact.username);
+            authenticate(contact);
+        }
     }
 
 
@@ -106,7 +112,7 @@ public class LoginActivity extends ActionBarActivity {
 
 
 
-    private boolean validateName() {
+   /* private boolean validateName() {
         if (etusername.length() != 10) {
             inputLayoutName.setError(getString(R.string.err_msg_phone));
             requestFocus(etusername);
@@ -117,7 +123,7 @@ public class LoginActivity extends ActionBarActivity {
 
         return true;
     }
-
+*/
     private void requestFocus(View view) {
         if (view.requestFocus()) {
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
@@ -152,9 +158,9 @@ public class LoginActivity extends ActionBarActivity {
 
         public void afterTextChanged(Editable editable) {
             switch (view.getId()) {
-                case R.id.input_phone:
-                    validateName();
-                    break;
+              //  case R.id.my_phone_input:
+              //      validateName();
+              //      break;
 
                 case R.id.input_password:
                     validatePassword();

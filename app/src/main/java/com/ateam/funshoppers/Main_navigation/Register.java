@@ -15,29 +15,32 @@ import android.widget.Toast;
 
 import com.ateam.funshoppers.R;
 
+import net.rimoto.intlphoneinput.IntlPhoneInput;
+
 
 public class Register extends Activity {
     EditText etname ,etemail , etusername , etpassword, etconfirm_password;
     private TextInputLayout inputLayoutName, inputLayoutEmail,inputLayoutPhone, inputLayoutPassword;
     private Button btnSignUp;
+    IntlPhoneInput phoneInputView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
-
+         phoneInputView = (IntlPhoneInput) findViewById(R.id.my_phone_input);
         inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_namer);
         inputLayoutEmail = (TextInputLayout) findViewById(R.id.input_layout_emailr);
-        inputLayoutPhone = (TextInputLayout) findViewById(R.id.input_layout_phoner);
+       // inputLayoutPhone = (TextInputLayout) findViewById(R.id.input_layout_phoner);
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_passwordr);
         etname = (EditText) findViewById(R.id.input_namer);
         etemail = (EditText) findViewById(R.id.input_emailr);
-        etusername = (EditText) findViewById(R.id.input_phoner);
+       // etusername = (EditText) findViewById(R.id.input_phoner);
         etpassword = (EditText) findViewById(R.id.input_passwordr);
         btnSignUp = (Button) findViewById(R.id.btn_signup);
 
         etname.addTextChangedListener(new MyTextWatcher(etname));
         etemail.addTextChangedListener(new MyTextWatcher(etemail));
-        etusername.addTextChangedListener(new MyTextWatcher(etusername));
+       // etusername.addTextChangedListener(new MyTextWatcher(etusername));
         etpassword.addTextChangedListener(new MyTextWatcher(etpassword));
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
@@ -63,17 +66,20 @@ public class Register extends Activity {
         if (!validateEmail()) {
             return;
         }
-        if (!validatePhone()) {
-            return;
-        }
+//        if (!validatePhone()) {
+      //      return;
+     //   }
 
 
         if (!validatePassword()) {
             return;
         }
+        if(!phoneInputView.isValid()) {
+           return;
+        }
         String name = etname.getText().toString();
         String email = etemail.getText().toString();
-        String username = etusername.getText().toString();
+        String username = phoneInputView.getNumber();
         String password = etpassword.getText().toString();
 
         Contact contact = new Contact(name ,email , username,password);
@@ -100,7 +106,7 @@ public class Register extends Activity {
 
         return true;
     }
-    private boolean validatePhone() {
+   /* private boolean validatePhone() {
         if (etusername.length()!=10) {
             inputLayoutName.setError(getString(R.string.err_msg_phone));
             requestFocus(etusername);
@@ -111,6 +117,7 @@ public class Register extends Activity {
 
         return true;
     }
+    */
     private boolean validateEmail() {
         String email = etemail.getText().toString().trim();
 
@@ -166,10 +173,10 @@ public class Register extends Activity {
                 case R.id.input_emailr:
                     validateEmail();
                     break;
-                case R.id.input_phoner:
-                    validatePhone();
+                //case R.id.input_phoner:
+                    //validatePhone();
 
-                    break;
+                  //  break;
                 case R.id.input_passwordr:
                     validatePassword();
                     break;

@@ -93,6 +93,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.googlecode.libphonenumber\libphonenumber\7.2.1\91b21f6fa0b639b8d71cce29b7e9109347d93919\libphonenumber-7.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="91b21f6fa0b639b8d71cce29b7e9109347d93919">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\libphonenumber-7.2.1_326cf51c4aa28bc8df78a3d54955d7e49e98b2ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -144,6 +153,15 @@
         revision="23.0.3"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_407e43d6acff0d8c3924333d654fb3165852ef62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\exploded-aar\net.rimoto\intlphoneinput\0.9.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="160851b01b952c0976a48052b40171b315dd0878">
+        <dex dex="C:\Users\Sumit\Desktop\apptite-master\apptite-master\app\build\intermediates\pre-dexed\debug\net.rimoto-intlphoneinput-0.9.3_cbd3f0f5b68298c85d1e91c236884a73479b9037.jar" />
     </item>
     <item
         is-multidex="false"
