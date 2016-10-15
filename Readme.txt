@@ -1,4 +1,4 @@
-![image](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210154.png)
+![Alt text](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210154.png?raw=true "Home Page")
 Using "Beacon toy" app from the playstore 
 (https://play.google.com/store/apps/details?id=com.uriio&hl=en)
 We can turn our mobile into a beacon.
