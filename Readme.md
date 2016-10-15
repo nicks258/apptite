@@ -1,4 +1,15 @@
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Picture1.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210233.png?raw=true)
 ![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210239.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210224.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210638.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210617.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210608.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210523.png?raw=true)
+![ScreenShot](https://github.com/nicks258/apptite/blob/master/Screenshot_20161005-210239.png?raw=true)
+
+
+
 Using "Beacon toy" app from the playstore 
 (https://play.google.com/store/apps/details?id=com.uriio&hl=en)
 We can turn our mobile into a beacon.
