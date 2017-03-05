@@ -77,4 +77,10 @@
     <color name="blackPrimaryDark">#282828</color>
     <color name="blackPrimary">#2E2E2E</color>
     <color name="blackPrimaryLight">#8F8F8F</color>
+    <color name="gray">#eee9e9</color>
+    <color name="grey">#d2d2d2</color>
+    <color name="bg_screen2">#22b00d</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
 </resources>

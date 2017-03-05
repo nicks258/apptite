@@ -19,8 +19,11 @@
 package com.ateam.funshoppers.ui.view;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Paint.Style;
@@ -33,8 +36,10 @@ import android.hardware.SensorManager;
 import android.os.SystemClock;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 
@@ -44,11 +49,18 @@ import com.ateam.funshoppers.util.AngleLowpassFilter;
 
 import org.altbeacon.beacon.Beacon;
 
+import java.net.URL;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
+
+import static com.ateam.funshoppers.util.DialogBuilder.createSimpleOkErrorDialog;
 
 public class RadarScanView extends View implements SensorEventListener {
     private final static int RADAR_RADIS_VISION_METERS = 15;
@@ -72,9 +84,11 @@ public class RadarScanView extends View implements SensorEventListener {
     private TextView mInfoView;
     private Rect mTextBounds = new Rect();
     private Paint mGridPaint;
+    private Paint mTextPaint;
     private Paint mErasePaint;
     private Bitmap mBlip;
     private boolean mUseMetric;
+    ArrayList<Double> distanceM;
     /**
      * Used to draw the animated ring that sweeps out from the center
      */
@@ -103,6 +117,7 @@ public class RadarScanView extends View implements SensorEventListener {
      * Time in millis when the sweep last crossed the blip
      */
     private long mBlipTime;
+    private View view1;
 
     public RadarScanView(Context context) {
         this(context, null);
@@ -127,6 +142,16 @@ public class RadarScanView extends View implements SensorEventListener {
         mGridPaint.setStrokeWidth(2.0f);
         mGridPaint.setTextSize(16.0f);
         mGridPaint.setTextAlign(Align.CENTER);
+
+        //paint used for distance texts
+        mTextPaint = new Paint();
+        mTextPaint.setColor(getResources().getColor(R.color.bluePrimaryDark));
+
+        mTextPaint.setAntiAlias(true);
+        mTextPaint.setStyle(Style.STROKE);
+        mTextPaint.setStrokeWidth(2.0f);
+        mTextPaint.setTextSize(35.0f);
+        mTextPaint.setTextAlign(Align.CENTER);
 
         // Paint used to erase the rectangle behind the ring text
         mErasePaint = new Paint();
@@ -163,7 +188,8 @@ public class RadarScanView extends View implements SensorEventListener {
         mSweepPaint2.setStyle(Style.STROKE);
         mSweepPaint2.setStrokeWidth(3f);
 
-        mBlip = ((BitmapDrawable) ContextCompat.getDrawable(context, R.drawable.ic_location_on_black_24dp)).getBitmap();
+       mBlip= ((BitmapDrawable) ContextCompat.getDrawable(context, R.drawable.ic_location_on_black_24dp)).getBitmap();
+
 
     }
 
@@ -184,6 +210,7 @@ public class RadarScanView extends View implements SensorEventListener {
 
         // Draw the rings
         final Paint gridPaint = mGridPaint;
+        final Paint textPaint = mTextPaint;
         canvas.drawCircle(center, center, radius, gridPaint);
         canvas.drawCircle(center, center, radius * 3 / 4, gridPaint);
         canvas.drawCircle(center, center, radius >> 1, gridPaint);
@@ -249,12 +276,23 @@ public class RadarScanView extends View implements SensorEventListener {
                 if (((System.currentTimeMillis() - dBeacon.getTimeLastSeen()) / 1000 < 5)) {
                     canvas.drawBitmap(mBlip, center + (cos * distanceToPix(dBeacon.getDistance())) - 8,
                             center + (sin * distanceToPix(dBeacon.getDistance())) - 8, gridPaint);
-                }
-            }
+                    // String dist=String.valueOf(Math.round(dBeacon.getDistance()*100.0)/100.0)+"m";
+                    String url = dBeacon.getEddystoneURL();
+                    String dist=url.substring(url.indexOf("/")+2,url.indexOf("."));
+                       if(dist.equals("www")){
+                           String distance[]=url.split(Pattern.quote("."));
+                           dist=distance[1];
+                       }
 
-            gridPaint.setAlpha(255);
+                        canvas.drawText(dist, center + (cos * distanceToPix(dBeacon.getDistance())) - 8, center + (sin * distanceToPix(dBeacon.getDistance()) - 8),
+                                textPaint);
+                    }
+                }
+
+                gridPaint.setAlpha(255);
+            }
         }
-    }
+
 
     private String getRatioDistanceText(float ringRation) {
         return new DecimalFormat("##0.00").format(RADAR_RADIS_VISION_METERS * mDistanceRatio * ringRation);
@@ -292,6 +330,7 @@ public class RadarScanView extends View implements SensorEventListener {
             // TODO
         }
     }
+
 
     @Override
     public void onSensorChanged(SensorEvent event) {
@@ -339,7 +378,9 @@ public class RadarScanView extends View implements SensorEventListener {
         while (iterator.hasNext()) {
             DetectedBeacon dBeacon = new DetectedBeacon(iterator.next());
             dBeacon.getEddystoneURL();
+            dBeacon.getDistance();
             dBeacon.setTimeLastSeen(System.currentTimeMillis());
+
             this.mBeacons.put(dBeacon.getId(), dBeacon);
         }
     }
@@ -350,9 +391,11 @@ public class RadarScanView extends View implements SensorEventListener {
 
         updateDistances();
 
+
         updateBeaconsInfo(beacons);
 
         invalidate();
+        Log.e("beacons detected","true");
     }
 
     private void updateBeaconsInfo(final Collection<Beacon> beacons) {
@@ -394,5 +437,6 @@ public class RadarScanView extends View implements SensorEventListener {
         mSweepTime = 0L;
         mInfoView.setText("");
     }
+
 
 }

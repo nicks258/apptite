@@ -192,7 +192,7 @@ public class LoginActivity extends ActionBarActivity {
 
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
 
-                    PendingIntent pendingIntent = PendingIntent.getActivity(LoginActivity.this, 1, intent, 0);
+                   /* PendingIntent pendingIntent = PendingIntent.getActivity(LoginActivity.this, 1, intent, 0);
 
                     Notification.Builder builderr = new Notification.Builder(LoginActivity.this);
 
@@ -207,7 +207,7 @@ public class LoginActivity extends ActionBarActivity {
                     builderr.build();
 
                     myNotication = builderr.getNotification();
-                    manager.notify(11, myNotication);
+                    manager.notify(11, myNotication);*/
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AppCompatAlertDialogStyle);
                     builder.setTitle("Welcome Back!!");

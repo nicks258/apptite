@@ -1,58 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/home"
-            android:checked="false"
-            android:icon="@drawable/homeicon"
-            android:title="Home Page" />
-
-        <item
-            android:id="@+id/electronics"
-            android:checked="false"
-            android:icon="@drawable/elec"
-            android:title="Electronics" />
-
-        <item
-            android:id="@+id/lifestyle"
-            android:checked="false"
-            android:icon="@drawable/life"
-            android:title="Lifestyle" />
-
-        <item
-            android:id="@+id/homes"
-            android:checked="false"
-            android:icon="@drawable/furniture"
-            android:title="Homes and Furniture" />
-
-
-        <item
-            android:id="@+id/books"
-            android:checked="false"
-            android:icon="@drawable/brands"
-            android:title="Brands" />
-
-        <item
-            android:id="@+id/offer"
-            android:checked="false"
-            android:icon="@drawable/gift"
-            android:title="Offer Zone" />
-
+    <item
+        android:id="@+id/fashion"
+        android:title="Fashion"
+        android:checked="false"/>
+    <item android:id="@+id/food"
+        android:title="Food"
+        android:checked="false"/>
+    <item android:id="@+id/lifestyle"
+        android:title="LifeStyle"
+        android:checked="false"/>
+        <item android:id="@+id/featured"
+            android:title="Featured"
+            android:checked="false"/>
     </group>
-    <group
-        android:id="@+id/option"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/mycart"
-            android:checked="false"
-            android:icon="@drawable/myacc"
-            android:title="My Account" />
-        <item
-            android:id="@+id/myaccountt"
-            android:checked="false"
-            android:icon="@drawable/mycart"
-            android:title="My Orders" />
-    </group>
+    <item android:title="features">
+        <menu>
+            <item android:id="@+id/gostore"
+                android:title="Go to Store"/>
+            <item android:id="@+id/trial"
+                android:title="Virtual Trial"/>
+        </menu>
+
+    </item>
+    <item android:title="Other">
+        <menu>
+            <item android:id="@+id/faq"
+                android:title="FAQ"/>
+            <item android:id="@+id/contact"
+                android:title="Contact Us"/>
+            <item android:id="@+id/offers"
+                android:title="Offer Zone"/>
+            <item android:id="@+id/logout"
+                android:title="Log Out"/>
+        </menu>
+    </item>
 </menu>

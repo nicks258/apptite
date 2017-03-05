@@ -1,0 +1,52 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="16dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photosee"
+            android:text="See All"
+            android:background="@android:color/transparent"
+            android:textColor="@color/bg_screen2"
+            android:gravity="right"/>
+    </LinearLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridview"
+        android:verticalSpacing="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:background="#FFFFFF"></GridView>
+    <TextView
+        android:id="@id/android:empty"
+        android:text="@string/empty_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

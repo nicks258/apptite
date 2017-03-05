@@ -31,7 +31,85 @@
             android:name=".ui.activity.MainNavigationActivity"
 
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Main_navigation.MainActivity"></activity>
+        <activity android:name=".Main_navigation.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2.NoActionBar"></activity>
+        <activity
+            android:name=".Main_navigation.SingleBusiness"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".Main_navigation.BusinessList"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".Main_navigation.SlideshowDialogFragment"
+            android:theme="@style/AppTheme2.NoActionBar"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <activity android:name=".Main_navigation.ReviewDetail"
+            android:theme="@style/AppTheme2"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".Main_navigation.PhotoDetail"
+            android:theme="@style/AppTheme2"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <activity android:name=".Main_navigation.ProductDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".Main_navigation.MapsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".Main_navigation.SingleProduct"
+            android:theme="@style/AppTheme2.NoActionBar"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity android:name=".Main_navigation.Featured"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Main_navigation.Trial"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Main_navigation.PinLockActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme2"/>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Main_navigation.PaymentMode"
+            android:theme="@style/AppTheme2"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Main_navigation.SingleProduct"></activity>
+
+
+
+
         <activity android:name=".AppIntro.ImageBackgroundExampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,6 +146,8 @@
         </receiver>
 
         <activity android:name=".Main_navigation.ChatMessager"></activity>
+
+
     </application>
 
 </manifest>

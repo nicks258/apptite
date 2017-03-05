@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "252209584342",
+    "firebase_url": "https://funshopper-92650.firebaseio.com",
+    "project_id": "funshopper-92650",
+    "storage_bucket": "funshopper-92650.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252209584342:android:1f53e749350dcbcc",
+        "android_client_info": {
+          "package_name": "com.ateam.funshoppers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252209584342-8h7q0gug86o20kvp82fq428kj9ii5ush.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxDaymP3uH5BtjYGJLV8Bt5RTN1AdYJ78"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

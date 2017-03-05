@@ -233,5 +233,23 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search for brands,products and more</string>
+    <string name="hello">Hello.</string>
+    <string name="welcome">Welcome to Funshopper</string>
+    <string name="empty_list">No item available</string>
+    <string name="available">Available</string>
+    <string name="navailable">Not Available</string>
+    <string name="fashion">Fashion</string>
+    <string name="food">Food</string>
+    <string name="address">Address</string>
+    <string name="addreview">Add a review</string>
+    <string name="see">See All</string>
+    <string name="lifestyle">LifeStyle</string>
+    <string name="google_map_key">AIzaSyAR-2nzJyiUDlfm8u-oXGE16WklS66Ytvo</string>
+    <string name="rs">\u20b9</string>
+    <string name="share">Share</string>
+    <string name="pay">Buy Now</string>
+    <string name="online_pay">Pay Online</string>
+    <string name="offline_pay">Pay through QR Scan</string>
 
 </resources>

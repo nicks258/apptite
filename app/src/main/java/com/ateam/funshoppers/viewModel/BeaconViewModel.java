@@ -18,6 +18,9 @@
 
 package com.ateam.funshoppers.viewModel;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.databinding.BaseObservable;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
@@ -32,6 +35,9 @@ import com.ateam.funshoppers.model.DetectedBeacon;
 import com.ateam.funshoppers.model.IManagedBeacon;
 import com.ateam.funshoppers.ui.fragment.BaseFragment;
 import com.ateam.funshoppers.util.BeaconUtil;
+
+import static com.thefinestartist.utils.content.ContextUtil.getApplicationContext;
+import static com.thefinestartist.utils.service.ServiceUtil.getSystemService;
 
 
 public class BeaconViewModel extends BaseObservable {
@@ -155,6 +161,13 @@ public static TextView textView;
                 //frameLayout = (FrameLayout)v.findViewById(R.id.content_view);
 
                 Log.d("neonicks",getUuid());
+//                NotificationManager notif=(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+//                Notification notify=new Notification.Builder
+//                        (getApplicationContext()).setContentTitle("Welcome To SRM University").setContentText("You Are near to " + getUuid()).
+//                        setContentTitle("Computer Science").setSmallIcon(R.drawable.armseal).build();
+//
+//                notify.flags |= Notification.FLAG_AUTO_CANCEL;
+//                notif.notify(0, notify);
 
 
             }

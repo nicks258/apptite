@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_trial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout  android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+
+            >
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Choose Image"
+                android:layout_marginLeft="85dp"
+                android:id="@+id/buttonChoose1"
+                android:layout_alignTop="@+id/buttonUpload1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/imageView11"
+                android:layout_above="@+id/buttonChoose1"
+                android:background="#dddcdc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trial"
+                android:id="@+id/imgView"
+                android:scaleType="matrix"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go Back"
+                android:id="@+id/buttonUpload1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView11"
+                android:layout_alignEnd="@+id/imageView11" />
+
+
+        </RelativeLayout>
+    <com.sa90.materialarcmenu.ArcMenu
+        android:id="@+id/arcmenu_android_example_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="center"
+        app:menu_color="#0fb33d"
+        app:menu_open="arc_right"
+        app:menu_scr="@android:drawable/btn_plus">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_arc_menu_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_info"
+            app:backgroundTint="#0fb33d" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_arc_menu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_alert"
+            app:backgroundTint="#0fb33d" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_arc_menu_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_email"
+            app:backgroundTint="#0fb33d" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_arc_menu_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@android:drawable/ic_dialog_map"
+            app:backgroundTint="#0fb33d" />
+
+    </com.sa90.materialarcmenu.ArcMenu>
+</RelativeLayout>

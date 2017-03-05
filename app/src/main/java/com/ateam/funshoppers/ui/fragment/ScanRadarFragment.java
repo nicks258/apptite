@@ -1,31 +1,42 @@
 
 package com.ateam.funshoppers.ui.fragment;
 
+import android.app.Dialog;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.ateam.funshoppers.R;
+import com.ateam.funshoppers.model.DetectedBeacon;
 import com.ateam.funshoppers.ui.view.RadarScanView;
+import com.ateam.funshoppers.util.DialogBuilder;
 
 import org.altbeacon.beacon.Beacon;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+import static com.ateam.funshoppers.util.DialogBuilder.createSimpleOkErrorDialog;
+
 
 public class ScanRadarFragment extends ScanFragment {
-
+    Double bc = 0.00;
+    Dialog dialog;
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
 
@@ -58,6 +69,7 @@ public class ScanRadarFragment extends ScanFragment {
         ButterKnife.bind(this, fragmentView);
 
         setupToolbar();
+        //
 
         mRadar.setUseMetric(true);
         mRadar.setDistanceView(mDistView);
@@ -96,6 +108,7 @@ public class ScanRadarFragment extends ScanFragment {
         if (mBeaconManager.isBound(this)) mBeaconManager.setBackgroundMode(false);
         mSensorManager.registerListener(mRadar, accSensor, SensorManager.SENSOR_DELAY_GAME);
         mSensorManager.registerListener(mRadar, magnetSensor, SensorManager.SENSOR_DELAY_GAME);
+
     }
 
     private void setupToolbar() {
@@ -130,12 +143,51 @@ public class ScanRadarFragment extends ScanFragment {
             return;
         }
         if (getActivity() != null) {
+
             getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     mRadar.onDetectedBeacons(beacons);
+
+
+                    bc = getDistances(beacons);
+
                 }
             });
         }
     }
 
+    public Double getDistances(Collection<Beacon> beacons) {
+        ArrayList<Double> distances = new ArrayList<>();
+        Iterator<Beacon> iterator = beacons.iterator();
+        while (iterator.hasNext()) {
+            DetectedBeacon dBeacon = new DetectedBeacon(iterator.next());
+            dBeacon.getEddystoneURL();
+            distances.add(dBeacon.getDistance());
+
+        }
+        Collections.sort(distances);
+        Log.e("least distance", distances.toString());
+
+        if (distances.get(0) < 5) {
+
+           if (dialog==null){
+               //
+               Double loc=distances.get(0)*100.0/100.0;
+             dialog=  createSimpleOkErrorDialog(getActivity(),"Nearest beacon","nearest beacon is at location"+loc+ " m");
+               dialog.show();
+           }
+
+                Log.e("distance", "less than 5");
+            }
+         else
+            Log.e("distance", "greater than 5");
+
+
+        return distances.get(0);
+    }
 }
+
+
+
+
+
