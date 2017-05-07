@@ -30,6 +30,8 @@ import android.widget.EditText;
 import com.ateam.funshoppers.R;
 
 import com.ateam.funshoppers.ui.activity.MainNavigationActivity;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.orhanobut.logger.Logger;
 
 import net.rimoto.intlphoneinput.IntlPhoneInput;
 
@@ -55,6 +57,8 @@ public class LoginActivity extends ActionBarActivity {
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
       //  etusername = (EditText) findViewById(R.id.input_phone);
         phoneInputView.hideKeyboard();
+        String token = FirebaseInstanceId.getInstance().getToken();
+        Logger.i("token->>" + token);
         etpassword = (EditText) findViewById(R.id.input_password);
         btnSignUp = (Button) findViewById(R.id.btn_login);
         localDatabase = new LocalDatabase(this);

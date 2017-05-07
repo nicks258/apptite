@@ -110,22 +110,17 @@
         </activity>
 
 
-<!--TODO APP INTRO UNCOMMENT ME-->
 
-        <!--<activity android:name=".AppIntro.ImageBackgroundExampleActivity">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <activity android:name=".AppIntro.ImageBackgroundExampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
        <activity android:name=".BeaconDistance.BeaconDisctance">
-           <intent-filter>
-               <action android:name="android.intent.action.MAIN" />
-
-               <category android:name="android.intent.category.LAUNCHER" />
-           </intent-filter>
        </activity>
 
         <activity android:name=".BeaconDistance.WebviewActivity">
