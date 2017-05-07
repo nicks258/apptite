@@ -29,12 +29,13 @@
 
         <activity
             android:name=".ui.activity.MainNavigationActivity"
-
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".Main_navigation.MainActivity"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTop"
-            android:theme="@style/AppTheme2.NoActionBar"></activity>
+            android:theme="@style/AppTheme2.NoActionBar">
+        </activity>
         <activity
             android:name=".Main_navigation.SingleBusiness"
             android:configChanges="keyboardHidden|orientation"
@@ -105,19 +106,30 @@
             android:theme="@style/AppTheme2"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTop"
-            android:parentActivityName=".Main_navigation.SingleProduct"></activity>
-
-
-
-
-        <activity android:name=".AppIntro.ImageBackgroundExampleActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:parentActivityName=".Main_navigation.SingleProduct">
         </activity>
 
+
+<!--TODO APP INTRO UNCOMMENT ME-->
+
+        <!--<activity android:name=".AppIntro.ImageBackgroundExampleActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+       <activity android:name=".BeaconDistance.BeaconDisctance">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+       </activity>
+
+        <activity android:name=".BeaconDistance.WebviewActivity">
+        </activity>
         <activity android:name=".Main_navigation.LoginActivity" />
         <activity android:name=".Main_navigation.Register" />
         <activity
@@ -126,7 +138,6 @@
         <activity
             android:name=".ui.activity.BeaconActionActivity"
             />
-
         <receiver android:name=".receiver.BeaconRegionReceiver">
             <intent-filter>
                 <action android:name="${applicationId}.action.NOTIFY_BEACON_ENTERS_REGION" />

@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.google.gms:google-services:3.0.0'
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:2.3.1'
         classpath 'com.android.databinding:dataBinder:1.0-rc4'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 
@@ -14,6 +14,24 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+ext {
+    minSdkVersion = 9
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+    gradleVersion = '3.4.1'
+    kotlinVersion = '1.1.0'
+}
+ext.deps = [rxjava2           : 'io.reactivex.rxjava2:rxjava:2.0.7',
+            rxandroid2        : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            supportannotations: 'com.android.support:support-annotations:25.2.0',
+            appcompatv7       : 'com.android.support:appcompat-v7:25.2.0',
+            junit             : 'junit:junit:4.12',
+            truth             : 'com.google.truth:truth:0.32',
+            testingsupport    : 'com.android.support.test:testing-support-lib:0.1',
+            mockitocore       : 'org.mockito:mockito-core:2.7.19',
+            mockitoandroid    : 'org.mockito:mockito-android:2.7.19',
+            kotlinstdlib      : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            kotlingradleplugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"]
 
 allprojects {
     repositories {

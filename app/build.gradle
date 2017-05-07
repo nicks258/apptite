@@ -29,6 +29,8 @@ dependencies {
     final DAGGER_VERSION = '2.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
+    compile deps.rxandroid2
+    compile deps.appcompatv7
     compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
     compile "com.android.support:support-v13:$SUPPORT_LIBRARY_VERSION"
     compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
@@ -56,6 +58,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     compile 'net.rimoto:intlphoneinput:0.9.3'
+    compile 'com.orhanobut:logger:1.15'
     // retrofit, gson
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
@@ -67,6 +70,11 @@ dependencies {
     compile 'com.daimajia.slider:library:1.1.5@aar'
     compile 'com.sa90.materialarcmenu:library:1.4'
     compile 'com.andrognito.pinlockview:pinlockview:1.0.1'
+//    Beacon Library
+    compile 'org.altbeacon:android-beacon-library:2.9.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile project(':library')
+    compile project(path: ':library')
 }
 apply plugin: 'com.google.gms.google-services'

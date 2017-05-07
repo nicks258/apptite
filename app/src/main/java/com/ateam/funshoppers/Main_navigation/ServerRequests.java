@@ -3,6 +3,10 @@ package com.ateam.funshoppers.Main_navigation;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
+
+import com.ateam.funshoppers.WebUrls;
+import com.orhanobut.logger.Logger;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -74,11 +78,17 @@ public class ServerRequests {
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "usersignup.php");
+            HttpPost post = new HttpPost(WebUrls.SIGNUPAPI);
 
             try {
                 post.setEntity(new UrlEncodedFormEntity(data_to_send));
-                client.execute(post);
+                HttpResponse httpResponse = client.execute(post);
+                HttpEntity entity = httpResponse.getEntity();
+                String result = EntityUtils.toString(entity);
+
+                Log.i("Results",result);
+                JSONObject jsonObject = new JSONObject(result);
+                Logger.json("Results->>" + jsonObject.toString());
             }
             catch(Exception e)
             {
@@ -120,7 +130,7 @@ public class ServerRequests {
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
-            HttpPost post = new HttpPost(SERVER_ADDRESS + "userlogin.php");
+            HttpPost post = new HttpPost(WebUrls.LOGINAPI);
 
 
             Contact retunedContact = null;
@@ -131,8 +141,10 @@ public class ServerRequests {
                 HttpEntity entity = httpResponse.getEntity();
                 String result = EntityUtils.toString(entity);
 
-
+                Log.i("Results",result);
                 JSONObject jsonObject = new JSONObject(result);
+                Log.i("Results", result.toString());
+                Logger.i("Results->>>" + jsonObject.toString());
                  retunedContact = null;
 
                     if(jsonObject.length() == 0)
