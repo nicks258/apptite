@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.ateam.funshoppers.WebUrls;
+import com.ateam.funshoppers.model.FirebaseToken;
 import com.orhanobut.logger.Logger;
 
 import org.apache.http.HttpEntity;
@@ -69,10 +70,13 @@ public class ServerRequests {
         @Override
         protected Void doInBackground(Void... voids) {
             ArrayList<NameValuePair> data_to_send = new ArrayList<>();
+            FirebaseToken firebaseToken = new FirebaseToken();
             data_to_send.add(new BasicNameValuePair("username" , contact.name));
             data_to_send.add(new BasicNameValuePair("email" , contact.email));
             data_to_send.add(new BasicNameValuePair("phone" , contact.username));
             data_to_send.add(new BasicNameValuePair("password" , contact.password));
+            data_to_send.add(new BasicNameValuePair("deviceToken" , FirebaseToken.deviceToken));
+            Logger.i("deviceToken->" + firebaseToken.getDeviceToken());
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams , CONNECTION_TIMEOUT);
             HttpConnectionParams.setSoTimeout(httpRequestParams , CONNECTION_TIMEOUT);
@@ -81,6 +85,7 @@ public class ServerRequests {
             HttpPost post = new HttpPost(WebUrls.SIGNUPAPI);
 
             try {
+                Logger.i("Sending"+data_to_send.toString());
                 post.setEntity(new UrlEncodedFormEntity(data_to_send));
                 HttpResponse httpResponse = client.execute(post);
                 HttpEntity entity = httpResponse.getEntity();
@@ -122,8 +127,10 @@ public class ServerRequests {
         @Override
         protected Contact doInBackground(Void... voids) {
             ArrayList<NameValuePair> data_to_send = new ArrayList<>();
+            FirebaseToken firebaseToken = new FirebaseToken();
             data_to_send.add(new BasicNameValuePair("phonenumber" ,contact.username) );
             data_to_send.add(new BasicNameValuePair("password" , contact.password));
+            data_to_send.add(new BasicNameValuePair("deviceToken" , FirebaseToken.deviceToken));
 
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams , CONNECTION_TIMEOUT);
@@ -136,6 +143,7 @@ public class ServerRequests {
             Contact retunedContact = null;
             try {
                 post.setEntity(new UrlEncodedFormEntity(data_to_send));
+                Logger.i("Sending"+data_to_send.toString());
                 HttpResponse httpResponse = client.execute(post);
 
                 HttpEntity entity = httpResponse.getEntity();

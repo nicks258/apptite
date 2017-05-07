@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.ateam.funshoppers.R;
+import com.ateam.funshoppers.model.FirebaseToken;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import net.rimoto.intlphoneinput.IntlPhoneInput;
 
@@ -22,6 +24,7 @@ public class Register extends Activity {
     EditText etname ,etemail , etusername , etpassword, etconfirm_password;
     private TextInputLayout inputLayoutName, inputLayoutEmail,inputLayoutPhone, inputLayoutPassword;
     private Button btnSignUp;
+    String token="";
     IntlPhoneInput phoneInputView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +38,11 @@ public class Register extends Activity {
         etname = (EditText) findViewById(R.id.input_namer);
         etemail = (EditText) findViewById(R.id.input_emailr);
        // etusername = (EditText) findViewById(R.id.input_phoner);
+        token = FirebaseInstanceId.getInstance().getToken();
         etpassword = (EditText) findViewById(R.id.input_passwordr);
+//        FirebaseToken firebaseToken = new FirebaseToken();
+//        firebaseToken.setDeviceToken(token);
+        FirebaseToken.deviceToken = token;
         btnSignUp = (Button) findViewById(R.id.btn_signup);
 
         etname.addTextChangedListener(new MyTextWatcher(etname));
