@@ -59,11 +59,11 @@ public class LoginActivity extends ActionBarActivity {
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
       //  etusername = (EditText) findViewById(R.id.input_phone);
         phoneInputView.hideKeyboard();
-        token = FirebaseInstanceId.getInstance().getToken();
+//        token = FirebaseInstanceId.getInstance().getToken();
 //        FirebaseToken firebaseToken = new FirebaseToken();
 //        firebaseToken.setDeviceToken(token);
-        FirebaseToken.deviceToken=token;
-        Logger.i("token->>" + token);
+//        FirebaseToken.deviceToken=token;
+//        Logger.i("token->>" + token);
         etpassword = (EditText) findViewById(R.id.input_password);
         btnSignUp = (Button) findViewById(R.id.btn_login);
         localDatabase = new LocalDatabase(this);

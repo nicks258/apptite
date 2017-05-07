@@ -38,11 +38,11 @@ public class Register extends Activity {
         etname = (EditText) findViewById(R.id.input_namer);
         etemail = (EditText) findViewById(R.id.input_emailr);
        // etusername = (EditText) findViewById(R.id.input_phoner);
-        token = FirebaseInstanceId.getInstance().getToken();
+//        token = FirebaseInstanceId.getInstance().getToken();
         etpassword = (EditText) findViewById(R.id.input_passwordr);
 //        FirebaseToken firebaseToken = new FirebaseToken();
 //        firebaseToken.setDeviceToken(token);
-        FirebaseToken.deviceToken = token;
+//        FirebaseToken.deviceToken = token;
         btnSignUp = (Button) findViewById(R.id.btn_signup);
 
         etname.addTextChangedListener(new MyTextWatcher(etname));

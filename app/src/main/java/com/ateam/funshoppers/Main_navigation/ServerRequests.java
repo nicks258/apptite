@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.ateam.funshoppers.WebUrls;
 import com.ateam.funshoppers.model.FirebaseToken;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.orhanobut.logger.Logger;
 
 import org.apache.http.HttpEntity;
@@ -75,7 +76,7 @@ public class ServerRequests {
             data_to_send.add(new BasicNameValuePair("email" , contact.email));
             data_to_send.add(new BasicNameValuePair("phone" , contact.username));
             data_to_send.add(new BasicNameValuePair("password" , contact.password));
-            data_to_send.add(new BasicNameValuePair("deviceToken" , FirebaseToken.deviceToken));
+            data_to_send.add(new BasicNameValuePair("deviceToken" , FirebaseInstanceId.getInstance().getToken()));
             Logger.i("deviceToken->" + firebaseToken.getDeviceToken());
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams , CONNECTION_TIMEOUT);
@@ -130,7 +131,7 @@ public class ServerRequests {
             FirebaseToken firebaseToken = new FirebaseToken();
             data_to_send.add(new BasicNameValuePair("phonenumber" ,contact.username) );
             data_to_send.add(new BasicNameValuePair("password" , contact.password));
-            data_to_send.add(new BasicNameValuePair("deviceToken" , FirebaseToken.deviceToken));
+            data_to_send.add(new BasicNameValuePair("deviceToken" , FirebaseInstanceId.getInstance().getToken()));
 
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams , CONNECTION_TIMEOUT);

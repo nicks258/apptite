@@ -9,8 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b832098-1eea-486e-b235-fd143f2456f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/model/FirebaseToken.java" />
+    <list default="true" id="2b832098-1eea-486e-b235-fd143f2456f3" name="Default" comment="Device token sync to server api.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/Register.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/Register.java" />
@@ -50,10 +49,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="65" selection-end-column="39" />
               <folding>
-                <element signature="e#2535#2684#0" expanded="true" />
-                <element signature="e#2683#2684#0" expanded="true" />
+                <element signature="e#2541#2690#0" expanded="true" />
+                <element signature="e#2689#2690#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +71,8 @@
       <file leaf-file-name="ServerRequests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/ServerRequests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="77" column="93" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
+            <state relative-caret-position="43">
+              <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -82,11 +81,11 @@
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+            <state relative-caret-position="285">
+              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
               <folding>
-                <element signature="e#2358#2507#0" expanded="true" />
-                <element signature="e#2506#2507#0" expanded="true" />
+                <element signature="e#2362#2511#0" expanded="true" />
+                <element signature="e#2510#2511#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3019,8 +3018,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/MyFirebaseMessagingService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LocalDatabase.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/Contact.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/model/FirebaseToken.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/Register.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/ServerRequests.java" />
       </list>
@@ -3534,7 +3533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494190384165</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Device token sync to server api.">
+      <created>1494192257864</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1494192257864</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3547,7 +3553,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6684685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3591,7 +3597,8 @@
     <MESSAGE value="Beacon Distance || Onclick PopUp  || Onclick Implemented." />
     <MESSAGE value="Firebase Push Notification Added." />
     <MESSAGE value="Firebase background service implemented. | | Minor Bugs Fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Firebase background service implemented. | | Minor Bugs Fixed." />
+    <MESSAGE value="Device token sync to server api." />
+    <option name="LAST_COMMIT_MESSAGE" value="Device token sync to server api." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -4051,17 +4058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-          <folding>
-            <element signature="e#2535#2684#0" expanded="true" />
-            <element signature="e#2683#2684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/model/FirebaseToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -4070,21 +4066,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="65" selection-end-column="39" />
+          <folding>
+            <element signature="e#2541#2690#0" expanded="true" />
+            <element signature="e#2689#2690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        <state relative-caret-position="285">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
-            <element signature="e#2358#2507#0" expanded="true" />
-            <element signature="e#2506#2507#0" expanded="true" />
+            <element signature="e#2362#2511#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ateam/funshoppers/Main_navigation/ServerRequests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="77" column="93" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
+        <state relative-caret-position="43">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
           <folding />
         </state>
       </provider>
