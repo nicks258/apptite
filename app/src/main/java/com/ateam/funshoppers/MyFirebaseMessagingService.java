@@ -23,16 +23,16 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         // ...
 
-        Log.e(TAG, "From: " + remoteMessage.getFrom());
+        Log.i(TAG, "From: " + remoteMessage.getFrom());
 
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
-            Log.e(TAG, "Message data payload: " + remoteMessage.getData());
+            Log.i(TAG, "Message data payload: " + remoteMessage.getData().get("message"));
         }
 
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
-            Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
+            Log.i(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
         }
 
         // Also if you intend on generating your own notifications as a result of a received FCM
@@ -42,8 +42,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle(remoteMessage.getNotification().getTitle())
-                        .setContentText(remoteMessage.getNotification().getBody())
+                        .setContentTitle("SRM University")
+                        .setContentText("Sample")
                         .setContentIntent(pendingIntent);
         mBuilder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
