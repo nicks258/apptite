@@ -493,6 +493,7 @@ public class BeaconDisctance extends AppCompatActivity implements  BeaconConsume
     com.orhanobut.logger.Logger.i(canObserveBeacons()+"approximately + endoffor");
     if (BeaconStatus==0)
     {
+
       com.orhanobut.logger.Logger.i(canObserveBeacons()+"approximately + endif");
       list.clear();
       runOnUiThread(new Runnable() {
