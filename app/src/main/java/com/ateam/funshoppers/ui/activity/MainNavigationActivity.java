@@ -368,7 +368,7 @@ public class MainNavigationActivity extends BaseActivity
     private void launchScanBeaconView() {
         addScanBeaconFragment();
     }
-    
+
     private void launchMain() {
         addMainFragment();
     }
