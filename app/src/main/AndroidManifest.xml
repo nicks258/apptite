@@ -120,7 +120,11 @@
             </intent-filter>
         </activity>
 
-       <activity android:name=".BeaconDistance.BeaconDisctance">
+       <activity android:name=".BeaconDistance.BeaconDisctance"
+           android:parentActivityName=".ui.activity.MainNavigationActivity"
+           android:launchMode="singleTop"
+           >
+
        </activity>
 
         <activity android:name=".BeaconDistance.WebviewActivity">

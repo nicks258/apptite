@@ -3,12 +3,498 @@
 
     <item
         is-multidex="false"
-        jar="/home/nicks/Downloads/apptite/library/build/intermediates/bundles/default/classes.jar"
+        jar="C:\Users\Home\.android\build-cache\5a8130515418ab3678faa8bec90c62a256855078\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="d56bb31df3e0b397e2d3d38321ceeac4ce0496b7">
-        <dex dex="/home/nicks/Downloads/apptite/app/build/intermediates/pre-dexed/debug/classes_10a1fad630411682dfbc5d7d2624f78a6f1ffc70.jar" />
+        sha1="acaeec786da68e5cfc30134c36cb5645a8a0c6ba">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_51ddfcbb4e49613df9036d8de9b2c4ec7e8e9b3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\7fdf3f58d7564c239066226d1d9a74f235933534\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_29951b36fccab146e3ac9f1c8e6d2c8afdd628df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\fcf5d092e9f8fe10f716218dd16fb526a59e670c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_0839ed9a6924d835c0899e470e9150a7ec38536f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\248a80f9fd5c71fad67d34b686eb287d46e3eea2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_e68623fb302b78ceb5b7a20a2e0bed255046d71a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\efeb834fbb1dcf33903104f2c3261bdab8ab3fd9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ff49fc9e7bb6c218b8158131264d4487b9eaea9">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_5d7e47606f05cbd94c8f4946e3e26c095d17fc59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.0\14b8c877d98005ba3941c9257cfe09f6ed0e0d74\reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\reactive-streams-1.0.0_d9c26d78fc8c869b306bc87575e3a4fd4bff3637.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\c2fc280c43f954bce5395be4d0b95bc33d88fd3d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_6b3ade8dfb9e90a3547d7c24e18793b59119d4a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_3cd84985cd12b5124b5779531a55ebbc9e31c7e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_7ecc2c1ce6808cf426024ebddcd12a41f39d7e7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\gson-2.6.2_5e76f2db9e42d82060de23739ace17603988018d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.android.databinding\baseLibrary\1.0-rc3\dda966552be274fa341c817e2b1588faf8e1b2\baseLibrary-1.0-rc3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00dda966552be274fa341c817e2b1588faf8e1b2">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\baseLibrary-1.0-rc3_f2e0651cd7604bb9254ca8780551be22118959ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\javax.inject-1_8b0e0d85277415e9d9c72230038a2e69fd81d9b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\a7007560bb5d12c57b6c71a27eb09ce335fff07d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_928af31ada2230f20e6d1822882937fef4996b37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\e98fa55f12c8b95e815586cfbd67ef5545b4c9aa\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_0640f077d790a82a5dec661b3fc6369529ab7cf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_b380b08d9834a6a8b6f2d0a0fdcb62e8b1aa2344.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\f999aabd0a5c89307110a58debfffb56478a964c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_49a7c7e1ef046dc97fb6d5b54b3c074e6300acff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\b675238455c6e52424d315bebc6c9732c3c73446\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_e80c7fcbf48edb37b2fd66578960c2d1e5700267.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\94d83b38d30b69d72d98f52c9181ab29e03ea183\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2af1f443cdb8cb78e1195b9b99013a6089ab35b0">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_67ef54eab1675c6f62b19749489d2778505a9742.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\580f7f739166616b20312c4b864c04b04c0d1639\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_d1aecc92108e11938aba0a32cafd3b5dbaabdc37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\c8a05ba74d707625ed2b886394e6e5ef46049fd4\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c07fb99b729345908dda75fadbbf882e300631ff">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_6058b63f6b7977a837afee83b4d1d9d8d8eaf8ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\6996b7a3087d347de1704a21996f5de467efd915\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_ec98436db0928313c48670915fc568a2f9d428a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\org.parceler\parceler-api\1.0.4\4f7392b86e064f3f6da06977f54c21a48e6b6871\parceler-api-1.0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4f7392b86e064f3f6da06977f54c21a48e6b6871">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\parceler-api-1.0.4_c0539e1f3c241f7517cc40e57c152df65791f504.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\3e24e176688919b3b4e052b4f47dcf3b5f651cda\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="160851b01b952c0976a48052b40171b315dd0878">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_e4de7f35b3487a3eb2a60b59f17bfad126a81263.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\c1c628caa3495894ae792263f52dc81b4cc0e897\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_313f8e3c6f945d714cc0d640e479c43bb40dae86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\5f789d5d36129d89fbc679eed98fb41c1471b6a3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_a5dd359b90e0ea192379f8428f66b3bfd953592f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\retrofit-2.0.2_6f34f0005985c1cd9975584fd214c8de215858cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\2ebe82d174bd08519834b7daa71bae4e3e0beb41\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eb5d8b5c47b4e5c0184a7986a26bc12cfc51cde3">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_a0cb7e41376afb694133b97026aba7983e899984.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\c8a05ba74d707625ed2b886394e6e5ef46049fd4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3c7e8ff9f476d0d93ee7b046fbe8037a2b822c0">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_d90cfbd5ec35fa5031aaf027bfcb38f29023623e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\994a3d0646d5f9d8dd65dae0df05e400685fa705\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_563767e3647f659206f68a8636c4d5ec60ab36a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\9d499fa4787ef41852b77b9b100e8896ec45e600\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e8d63a4db615acc515153328c936a9cd0cb2b3ff">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_2e854f4fd2f8bd4661e7591727f84e9dbf2dd541.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.google.dagger\dagger\2.2\febfd2d9e89bde4c3a9723bcd9522cba96bddac7\dagger-2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="febfd2d9e89bde4c3a9723bcd9522cba96bddac7">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\dagger-2.2_bb86b550f282f7f2fc29fba9b5da88fafd5a53c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\c22bcef22655c4ba17bb75954222396300eca164\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_eff534580686144a2b02e9a52642816af3fe875e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\26913ee79135b2b4f06c49477fcc3f49dbb27e39\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_f2a92c52d343769666f0e56c2b9463a5a9816a28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\5c1de32194a9b7c5f1c557d2eb7aa454fe981168\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_24fcae5e0af955deca5a7ed4b1cd05d583eb4863.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\4d4432c88ceb7790c0719f9acbaea476f12207e0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57fc6ceed2aec32f9d5b845cbf2e4d6ec44a6f7e">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_99f4925f7a3ce23e612694fefac90b9adf96e5d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.googlecode.libphonenumber\libphonenumber\7.2.1\91b21f6fa0b639b8d71cce29b7e9109347d93919\libphonenumber-7.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="91b21f6fa0b639b8d71cce29b7e9109347d93919">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\libphonenumber-7.2.1_fa4f553814eb87d6c63ae69e487ce19286107882.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\9a0142848f63e24a7f51126b67ccd9f124846df3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2a156b99fc7cc034308f942906b09d32754a4470">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_b9992464cbb211cba9dd7408538fcd618d2f379d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_c2476feb5de8daa28883c307279304799081c90f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\7bc39385891cac6bd083c060735e60d232db91eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c257801a8f17ba722a2658c3f4e799c395c5bc0">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_248d904cce3d4a3f587bd5fe4355e25d91e3e10b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\android-sdk-windows\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_d328cf50ed4a7c4994aa4d5daa6085afe54a01bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\applications\MyLemonade\apptitenew\library\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="689953a588774bd9ab3d83a3c5432ea9b24d8241">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_d56022a615ac113ec4b089fbefa83163ef6f9ddf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\b4664878852a5b855253c1f1f2b47871f44e6923\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_b8a217e6986ffb2ee2579201d8ef8e2a9e361673.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\b46b385f600ba189efb1c5be63acbc073bad1e1b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_c9922123a92ab52d7b2f013b752d8a2dbd8f8796.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\library-2.4.0_79d5f61508ef47f3f8d00a30b92f4dd217eb1850.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.thefinestartist\annotations\0.9.0\b69d23b00ca5fd30feea91ab4b24a192d6b928ef\annotations-0.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b69d23b00ca5fd30feea91ab4b24a192d6b928ef">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\annotations-0.9.0_af1e0cbb315de524f279be38eeca79b953b8decf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\okio-1.6.0_47e0d0a645ff237af42157b6945aa3a2828bcaf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\78455c8c5450646b04c16f63a31efa4a77114e74\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_8fdcfe59318160b6c93bc127c4d137c8ba8f5471.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\73b4356b2e3ef74de5dd116835c9967b07ee7859\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_ddac61ea7ddc15898f2218a37e037e0cd5ca182a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\acb50e26e753403ed68f78371d5fab1a94b379cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_26a5f7dc5bb407069ba28e2a5d02b695d7b85dc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.0.7\21734c0092a5d3c3ec99510e50c1ff76bdf0c65a\rxjava-2.0.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="21734c0092a5d3c3ec99510e50c1ff76bdf0c65a">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\rxjava-2.0.7_4f83a6c95402d6029ef4018056928304532b5be2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\4aed2701010d886f76042c8a6e892ec19a1d5d4f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c4f62b5874f45a6fd3617fa6447714adb7a72a7">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_d747cfb289dbad5b14293f4dbd6426041bb9d385.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\b2870dba0cfad0203df5d6fb60c953cc2c94814b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_3a9030c5558112465ed4e9895f3cface7dec6d48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\4730662a4e1c3c267bd57e2e69cd50d8ee0ade23\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_c8272ea0f2b018eee24449cfe90be7d79338db25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\aa7810dd52595495aad3b79ca8622dce6dce8d17\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_8595595968d7961ff88c6686bec5a5a0b448246f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Home\.android\build-cache\9d4334e98f88805bb437240f6d68c33db482cb92\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="F:\applications\MyLemonade\apptitenew\app\build\intermediates\pre-dexed\debug\classes_cbebef036b831e9aa6c0269952e687b8df417256.jar" />
     </item>
 
 </items>

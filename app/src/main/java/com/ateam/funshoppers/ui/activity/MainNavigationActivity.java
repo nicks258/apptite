@@ -51,6 +51,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.ateam.funshoppers.BeaconDistance.BeaconDisctance;
 import com.ateam.funshoppers.BeaconLocatorApp;
 import com.ateam.funshoppers.Main_navigation.MainActivity;
 import com.ateam.funshoppers.R;
@@ -267,7 +268,7 @@ public class MainNavigationActivity extends BaseActivity
 
 
     private void addScanBeaconFragment() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
+      /*  FragmentManager fragmentManager = getSupportFragmentManager();
         if (fragmentManager != null) {
             if (checkFragmentInstance(R.id.content_frame, DetectedBeaconsFragment.class) == null) {
                 fragmentManager
@@ -275,7 +276,9 @@ public class MainNavigationActivity extends BaseActivity
                         .replace(R.id.content_frame, DetectedBeaconsFragment.newInstance(), Constants.TAG_FRAGMENT_SCAN_LIST)
                         .commit();
             }
-        }
+        }*/
+      Intent intent=new Intent(MainNavigationActivity.this, BeaconDisctance.class);
+        startActivity(intent);
     }
 
     private void addRadarScanFragment() {

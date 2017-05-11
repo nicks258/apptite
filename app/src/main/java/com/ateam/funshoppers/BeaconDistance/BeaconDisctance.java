@@ -27,6 +27,8 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -71,7 +73,7 @@ import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.support.v4.content.PermissionChecker.PERMISSION_GRANTED;
 
-public class BeaconDisctance extends Activity implements  BeaconConsumer,RangeNotifier  {
+public class BeaconDisctance extends AppCompatActivity implements  BeaconConsumer,RangeNotifier  {
   private static final boolean IS_AT_LEAST_ANDROID_M =
       Build.VERSION.SDK_INT >= Build.VERSION_CODES.M;
   private static final int PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION = 1000;
@@ -91,6 +93,7 @@ public class BeaconDisctance extends Activity implements  BeaconConsumer,RangeNo
   private Distance myAdapter;
   private BeaconManager beaconManager;
   private int BeaconStatus;
+  public Toolbar toolbar;
   private static final Pattern urlPattern = Pattern.compile(
           "(?:^|[\\W])((ht|f)tp(s?):\\/\\/|www\\.)"
                   + "(([\\w\\-]+\\.){1,}?([\\w\\-.~]+\\/?)*"
@@ -101,6 +104,11 @@ public class BeaconDisctance extends Activity implements  BeaconConsumer,RangeNo
     super.onCreate(savedInstanceState);
     setContentView(R.layout.beacon_distance);
     lvBeacons = (ListView) findViewById(R.id.lv_beacons);
+    toolbar=(Toolbar)findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
+      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+      getSupportActionBar().setDisplayShowTitleEnabled(false);
+
 
     reactiveBeacons = new ReactiveBeacons(this);
     beacons = new HashMap<>();
@@ -481,7 +489,7 @@ public class BeaconDisctance extends Activity implements  BeaconConsumer,RangeNo
 
 
     }
-    com.orhanobut.logger.Logger.i("BEACONSTATUS" + BeaconStatus );
+//    com.orhanobut.logger.Logger.i("BEACONSTATUS" + BeaconStatus );
     com.orhanobut.logger.Logger.i(canObserveBeacons()+"approximately + endoffor");
     if (BeaconStatus==0)
     {
