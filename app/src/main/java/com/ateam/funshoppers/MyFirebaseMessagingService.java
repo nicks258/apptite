@@ -17,9 +17,12 @@ import com.google.firebase.messaging.RemoteMessage;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private String TAG=FirebaseMessagingService.class.getName();
+    String message="";
+    String title="";
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
+
 
         // ...
 
@@ -28,11 +31,13 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
             Log.i(TAG, "Message data payload: " + remoteMessage.getData().get("message"));
+            message = remoteMessage.getData().get("message");
+            //title=remoteMessage.getData().get("title");}
         }
-
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.i(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
+           // message=remoteMessage.getNotification().getBody();
         }
 
         // Also if you intend on generating your own notifications as a result of a received FCM
@@ -42,8 +47,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("SRM University")
-                        .setContentText("Sample")
+                        .setContentTitle("New Message")
+                        .setContentText(message)
                         .setContentIntent(pendingIntent);
         mBuilder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
